@@ -84,7 +84,11 @@ Find the JSON and charts under the directory, configured as output directory (by
 	- `.zicv` - Z-mode is intra-cell columns (datapoints are stacked vertically)
 	- no `.zic*` - Z-mode is file names, multiple images are generated per chart (e.g. `.btm` w/ no `.zic*` means X=Bands and Y=Time/Chunks drawn in a separate image file for each Z=Metrics, i.e. `btm.audio_quality--avg_sinad_db.sample.mp3.png`, `btm.audio_quality--quantization_efficiency.sample.mp3.png` etc.)
 	
-File names are designedin a way that makes copying the output for multiple tracks into a single directory and visually comparing charts with an image viewer sorting files by names.
+File names are designed in a way that makes copying the output for multiple tracks into a single directory and visually comparing charts with an image viewer sorting files by names.
+
+## Sample Woutput
+
+- c:\repos\Falael.CODE\code\Falael\Falael.Audio.Sda\pub\github\sample\sample.mp3.json
 
 ## Metrics Documentation
 
