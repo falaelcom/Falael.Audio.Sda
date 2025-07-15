@@ -9,7 +9,7 @@
 - Uses SOX for audio processing. Developed and tested with `sox-14.4.2-20250323-x64`, downloaded from https://www.rarewares.org/files/others/, file `sox-14.4.2-x64.zip  2025-03-23 03:15  1.5M`, full download link of the windows distribution: https://www.rarewares.org/files/others/sox-14.4.2-x64.zip
 	- Unzip the binary `sox.exe` file under `win32/sox-14.4.2-20250323-x64`
 
-## Windows (CLI)
+### Windows (CLI)
 ```
 mkdir c:\Falael.Audio.Sda
 cd c:\Falael.Audio.Sda
@@ -24,7 +24,30 @@ pip install spectra
 python main.py
 ```
 
-## POSIX
+After runnign `python main.py`, if installation was successful the following output will incrementally appear (processing takes time):
+
+```
+- src\sample.mp3
+--- split
+--- stereo_correlation
+--- stereo_width
+--- stereo_phase
+--- sparkle
+--- harmonics
+--- harmonics_full_spectrum
+--- freq_response
+--- dynamics
+--- dynamics_full_spectrum
+--- quantization
+--- quantization_full_spectrum
+--- dynamic_range
+--- audio_quality
+--- image_fingerprint
+```
+
+See __Output__ below for info on the output of the app and where to find it.
+
+### POSIX
 
 The installation process is expected to be trivial. See sox __Configuration__ below.
 
@@ -46,3 +69,21 @@ The installation process is expected to be trivial. See sox __Configuration__ be
 - `py/x4/image_fingerprint_lib/config.py` - chart layout and visuals configuration
 - `py/x4/image_fingerprint_lib/metrics.py` - metric normalization functions, labels and rendering order
 
+#### Output
+
+Find the JSON and charts under the directory, configured as output directory (by defailt `./out`):
+
+- `./out/<track-file-name.ext>/media/<track-file-name.ext>` - copy of the source file
+- `./out/<track-file-name.ext>/media/<track-file-name.ext>.NNN.<ext>` - the source file in 30s chunks
+- `./out/<track-file-name.ext>/<track-file-name.ext>.json` - raw metrics data
+- `./out/<track-file-name.ext>/fingerprint/*.png` - multiple perspectives charting a selected subset of the metrics data; meaning of the file naming abbreviations:
+	- `.btm, .bmt, .tbm, .tmb, .mbt, .mtb` - mapping of the result space dimensions to the X, Y and Z axes (btm means X=Bands, Y=Time/Chunks, Z=Metrics)
+	- `.zich` - Z-mode is intra-cell rows (datapoints are stacked horizontally)
+	- `.zicv` - Z-mode is intra-cell columns (datapoints are stacked vertically)
+	- no `.zic*` - Z-mode is file names, multiple images are generated per chart (e.g. `.btm` w/ no `.zic*` means X=Bands and Y=Time/Chunks drawn in a separate image file for each Z=Metrics, i.e. `btm.audio_quality--avg_sinad_db.sample.mp3.png`, `btm.audio_quality--quantization_efficiency.sample.mp3.png` etc.)
+	
+File names are designedin a way that makes copying the output for multiple tracks into a single directory and visually comparing charts with an image viewer sorting files by names.
+
+## Metrics Documentation
+
+https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/metric-reference.md
