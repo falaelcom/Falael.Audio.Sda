@@ -34,6 +34,8 @@ def bandpass(data, rate, low, high):
 
 Only metrics that appear in fingerprint images have a label and a normalization function specified. A list of all metrics is available after the __Image-Only Metrics__.
 
+Metrics for the last track chunk might be distorted as all metrics are optimized for 30s chunk processing, and the last chunk is usually much shorter. For very short chunks, some metrics don't have meaning and a bogus default value is assumed.
+
 #### Normalization
 
 Definition ranges of all metrics that appear in charts are normalized either to unipolar `(0, 1)` or bipolar `(-1, 1)` normalized ranges. Metrics are plotted as follows 
