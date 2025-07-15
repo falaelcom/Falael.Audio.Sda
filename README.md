@@ -88,7 +88,9 @@ File names are designed in a way that makes copying the output for multiple trac
 
 ## Sample Woutput
 
-- c:\repos\Falael.CODE\code\Falael\Falael.Audio.Sda\pub\github\sample\sample.mp3.json
+- https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/sample/sample.mp3.json
+
+![bmt.00.00 - 00.30.sample.mp3.png](https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/sample/fingerprint/bmt.00.00%20-%2000.30.sample.mp3.png)
 
 ## Metrics Documentation
 
