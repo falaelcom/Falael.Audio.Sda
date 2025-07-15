@@ -86,17 +86,19 @@ Find the JSON and charts under the directory, configured as output directory (by
 	
 File names are designed in a way that makes copying the output for multiple tracks into a single directory and visually comparing charts with an image viewer sorting files by names.
 
-## Sample Woutput
-
-- https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/sample/sample.mp3.json
-
-![bmt.00.00 - 00.30.sample.mp3.png](https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/sample/fingerprint/bmt.00.00%20-%2000.30.sample.mp3.png)
-
 ## Metrics Documentation
 
 https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/metric-reference.md
 
 Might want to download it and view with a dedicated MD viewer for better experience.
+
+## Sample Output (src/sample.mp3)
+
+- JSON - https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/sample/sample.mp3.json
+- All Charts - https://github.com/falaelcom/Falael.Audio.Sda/tree/trunk/sample/fingerprint
+
+![bmt.00.00 - 00.30.sample.mp3.png](https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/sample/fingerprint/bmt.00.00%20-%2000.30.sample.mp3.png)
+![tbm.zicv.sample.mp3.png](https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/sample/fingerprint/tbm.zicv.sample.mp3.png)
 
 ## Resources
 
