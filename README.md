@@ -87,3 +87,10 @@ File names are designedin a way that makes copying the output for multiple track
 ## Metrics Documentation
 
 https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/metric-reference.md
+
+Might want to download it and view with a dedicated MD viewer for better experience.
+
+## Resources
+
+- Markdown Viewer for Windows - https://www.softpedia.com/get/Office-tools/Other-Office-Tools/Markdown-Viewer-c3er.shtml
+
