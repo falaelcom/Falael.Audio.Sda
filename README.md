@@ -47,6 +47,8 @@ After runnign `python main.py`, if installation was successful the following out
 
 See __Output__ below for info on the output of the app and where to find it.
 
+The sample "sample.mp3" file contains the song "Samovilla of Collective Unreal - One More Flight" which has been created and produced by me under the name of Dan Loveschmidt and as part of this project is also covered by the MIT license.
+
 ### POSIX
 
 The installation process is expected to be trivial. See sox __Configuration__ below.
