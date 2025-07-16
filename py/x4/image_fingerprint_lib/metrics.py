@@ -78,8 +78,8 @@ METRICS = {
     },
     "stereo_phase::coherence": {
         "title": "st.phase", 
-        "type": "unipolar",
-        "normalize_func": lambda x, config: np.clip(x, 0.0, 1.0) 
+        "type": "bipolar",
+        "normalize_func": lambda x, config: np.clip(x, -1.0, 1.0) 
     },
     "quantization::avg_noise_floor_db": {
         "title": "noise Q",

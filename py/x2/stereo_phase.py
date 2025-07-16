@@ -1,6 +1,7 @@
 ﻿import os
 import numpy as np
 import soundfile as sf
+import time
 
 from .lib.bandpass_filter import bandpass
 
@@ -38,16 +39,25 @@ def calculate_phase_coherence(left_band, right_band, fft_size=256, overlap=0.75)
         # Wrap phase difference to [-π, π]
         phase_diff = np.angle(np.exp(1j * phase_diff))
         
-        # Only use bins with significant energy to avoid noise-dominated phase
+        # Get magnitudes
         left_mag = np.abs(left_fft)
         right_mag = np.abs(right_fft)
-        energy_threshold = 0.01 * np.max(np.maximum(left_mag, right_mag))
-        valid_bins = (left_mag > energy_threshold) & (right_mag > energy_threshold)
-        
+
+        # Combine minimal threshold with weighting
+        min_threshold = 1e-10  # Only exclude truly zero/NaN bins
+        valid_bins = (left_mag > min_threshold) & (right_mag > min_threshold)
+
         if np.any(valid_bins):
-            # Phase coherence: mean of |cos(phase_difference)|
-            # 1.0 = perfect phase lock, 0.0 = random phases
-            frame_coherence = np.mean(np.abs(np.cos(phase_diff[valid_bins])))
+            # Weight by energy within valid bins
+            valid_left_mag = left_mag[valid_bins]
+            valid_right_mag = right_mag[valid_bins]
+            valid_phase_diff = phase_diff[valid_bins]
+    
+            weights = (valid_left_mag**2 + valid_right_mag**2)
+            weights = weights / np.sum(weights)  # Normalize to sum to 1
+    
+            # Fixed phase coherence (-1 to +1 range)
+            frame_coherence = np.average(np.cos(valid_phase_diff), weights=weights)
             phase_coherence_values.append(frame_coherence)
     
     if phase_coherence_values:
@@ -80,8 +90,20 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
         range_key = f"{int(f_low)}Hz-{int(f_high)}Hz"
         output[range_key] = []
 
-    for chunk in chunk_list:
+    # Progress tracking
+    total_operations = len(chunk_list) * bands
+    completed_operations = 0
+    start_time = time.time()
+    
+    print(f"    Processing {len(chunk_list)} chunks across {bands} frequency bands." f" Total operations: {total_operations}")
+
+    for chunk_idx, chunk in enumerate(chunk_list):
         chunk_path = os.path.join(out_path, chunk)
+        
+        # Chunk-level progress
+        chunk_start_time = time.time()
+        print(f"    Chunk {chunk_idx + 1}/{len(chunk_list)}: {chunk}")
+        
         try:
             data, rate = sf.read(chunk_path)
             if data.ndim != 2 or data.shape[1] != 2:
@@ -95,6 +117,15 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
                         "coherence": None,
                         "error": "Not stereo"
                     })
+                    completed_operations += 1
+                
+                # Progress update for failed chunk
+                elapsed_time = time.time() - start_time
+                percent_complete = (completed_operations / total_operations) * 100
+                if completed_operations > 0:
+                    eta_seconds = (elapsed_time / completed_operations) * (total_operations - completed_operations)
+                    eta_minutes = eta_seconds / 60
+                    print(f"      ERROR: Not stereo - Progress: {percent_complete:.1f}% | ETA: {eta_minutes:.1f}m")
                 continue
 
             left = data[:, 0]
@@ -111,12 +142,26 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
                     "coherence": None,
                     "error": str(e)
                 })
+                completed_operations += 1
+                
+            # Progress update for failed chunk
+            elapsed_time = time.time() - start_time
+            percent_complete = (completed_operations / total_operations) * 100
+            if completed_operations > 0:
+                eta_seconds = (elapsed_time / completed_operations) * (total_operations - completed_operations)
+                eta_minutes = eta_seconds / 60
+                print(f"      ERROR: {str(e)} - Progress: {percent_complete:.1f}% | ETA: {eta_minutes:.1f}m")
             continue
 
+        # Process each frequency band
         for i in range(bands):
             f_low = log_edges[i]
             f_high = log_edges[i + 1]
             range_key = f"{int(f_low)}Hz-{int(f_high)}Hz"
+
+            # Show what we're about to process
+            print(f"      Band {i+1}/{bands}: {range_key}...", end=" ", flush=True)
+            band_start_time = time.time()
 
             try:
                 # Bandpass filter for this frequency range
@@ -137,5 +182,30 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
                     "coherence": None,
                     "error": str(e)
                 })
+                print(f"ERROR: {str(e)}", end=" ", flush=True)
+
+            # Show band completion time
+            band_elapsed = time.time() - band_start_time
+            print(f"done")
+
+            # Update progress after each band
+            completed_operations += 1
+            
+            # Print overall progress every 5 operations or for last operation
+            if completed_operations % 5 == 0 or completed_operations == total_operations:
+                elapsed_time = time.time() - start_time
+                percent_complete = (completed_operations / total_operations) * 100
+                
+                if completed_operations > 0:
+                    eta_seconds = (elapsed_time / completed_operations) * (total_operations - completed_operations)
+                    eta_minutes = eta_seconds / 60
+                    ops_per_sec = completed_operations / elapsed_time
+                    
+                    print(f"        >>> Overall Progress: {percent_complete:.1f}% | "
+                          f"ETA: {eta_minutes:.1f}m | Speed: {ops_per_sec:.1f} ops/sec")
+        
+        # Chunk completion summary
+        chunk_elapsed = time.time() - chunk_start_time
+        print(f"      Chunk completed in {chunk_elapsed:.1f}s")
 
     return {"result": output}

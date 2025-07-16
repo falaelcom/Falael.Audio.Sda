@@ -13,6 +13,7 @@ from x3 import dynamic_range, audio_quality
 from x4 import image_fingerprint
 #ALWAYS_RUN = ['audio_quality', 'harmonics', 'image_fingerprint']
 #ALWAYS_RUN = ['stereo_phase']
+#ALWAYS_RUN = ['image_fingerprint']
 #ALWAYS_RUN = ['audio_quality', 'image_fingerprint']
 ALWAYS_RUN = []
 MODULES = {
@@ -49,7 +50,7 @@ CONFIG = {
     "sparkle::frame_ms": 20,
     "sparkle::min_frequency_hz": 1300,
     "stereo_phase::fft_size": 128,
-    "stereo_phase::overlap": 0.75,        # Increased from your 0.5 to 0.75
+    "stereo_phase::overlap": 0.5,
     "harmonics::fft_size": 4096,
     "harmonics::hop_size": 2048, 
     "harmonics_full_spectrum::fft_size": 4096,

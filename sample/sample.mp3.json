@@ -542,181 +542,181 @@
       "20Hz-40Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.9489
+          "coherence": 0.4588
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.9172
+          "coherence": 0.1696
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.9374
+          "coherence": 0.5845
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.9256
+          "coherence": 0.3435
         }
       ],
       "40Hz-80Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.9163
+          "coherence": 0.6584
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.9077
+          "coherence": 0.6204
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.9883
+          "coherence": 0.9625
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.9195
+          "coherence": 0.673
         }
       ],
       "80Hz-161Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.9196
+          "coherence": 0.7798
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.8085
+          "coherence": 0.443
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.8771
+          "coherence": 0.7433
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.8962
+          "coherence": 0.6455
         }
       ],
       "161Hz-323Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.9313
+          "coherence": 0.8267
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.766
+          "coherence": 0.351
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.7505
+          "coherence": 0.2987
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.8543
+          "coherence": 0.7118
         }
       ],
       "323Hz-648Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.929
+          "coherence": 0.843
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.7934
+          "coherence": 0.5297
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.7365
+          "coherence": 0.3179
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.8059
+          "coherence": 0.5651
         }
       ],
       "648Hz-1299Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.9108
+          "coherence": 0.7518
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.7126
+          "coherence": 0.1784
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.6989
+          "coherence": -0.1138
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.7112
+          "coherence": 0.1246
         }
       ],
       "1299Hz-2605Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.895
+          "coherence": 0.7047
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.6794
+          "coherence": -0.1558
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.6826
+          "coherence": -0.3306
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.6851
+          "coherence": 0.0718
         }
       ],
       "2605Hz-5223Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.8999
+          "coherence": 0.7914
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.6914
+          "coherence": 0.0828
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.6808
+          "coherence": -0.0883
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.7059
+          "coherence": 0.214
         }
       ],
       "5223Hz-10473Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.9095
+          "coherence": 0.826
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.7198
+          "coherence": 0.2465
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.6943
+          "coherence": 0.0579
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.7387
+          "coherence": 0.3036
         }
       ],
       "10473Hz-21000Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.9189
+          "coherence": 0.8606
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.7453
+          "coherence": 0.3471
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.7105
+          "coherence": 0.1643
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.7791
+          "coherence": 0.4361
         }
       ]
     }
@@ -2591,44 +2591,6 @@
   },
   "audio_quality": {
     "result": {
-      "40Hz-80Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.5015,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.4999,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.5011,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.4985,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
-        }
-      ],
       "1299Hz-2605Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
@@ -2667,6 +2629,82 @@
           "std_sinad_db": 10.78
         }
       ],
+      "40Hz-80Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.5015,
+          "spectral_flatness_ratio": 0.233817,
+          "avg_sinad_db": 119.83,
+          "min_sinad_db": 84.07,
+          "max_sinad_db": 138.63,
+          "std_sinad_db": 6.27
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.4999,
+          "spectral_flatness_ratio": 0.262314,
+          "avg_sinad_db": 118.54,
+          "min_sinad_db": 106.06,
+          "max_sinad_db": 130.67,
+          "std_sinad_db": 4.7
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.5011,
+          "spectral_flatness_ratio": 0.268586,
+          "avg_sinad_db": 119.33,
+          "min_sinad_db": 105.11,
+          "max_sinad_db": 135.49,
+          "std_sinad_db": 4.21
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.4985,
+          "spectral_flatness_ratio": 0.237597,
+          "avg_sinad_db": 123.87,
+          "min_sinad_db": 76.38,
+          "max_sinad_db": 142.14,
+          "std_sinad_db": 10.78
+        }
+      ],
+      "161Hz-323Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.4987,
+          "spectral_flatness_ratio": 0.233817,
+          "avg_sinad_db": 119.83,
+          "min_sinad_db": 84.07,
+          "max_sinad_db": 138.63,
+          "std_sinad_db": 6.27
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.5002,
+          "spectral_flatness_ratio": 0.262314,
+          "avg_sinad_db": 118.54,
+          "min_sinad_db": 106.06,
+          "max_sinad_db": 130.67,
+          "std_sinad_db": 4.7
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.4988,
+          "spectral_flatness_ratio": 0.268586,
+          "avg_sinad_db": 119.33,
+          "min_sinad_db": 105.11,
+          "max_sinad_db": 135.49,
+          "std_sinad_db": 4.21
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.499,
+          "spectral_flatness_ratio": 0.237597,
+          "avg_sinad_db": 123.87,
+          "min_sinad_db": 76.38,
+          "max_sinad_db": 142.14,
+          "std_sinad_db": 10.78
+        }
+      ],
       "80Hz-161Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
@@ -2689,6 +2727,44 @@
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "quantization_efficiency": 0.4986,
+          "spectral_flatness_ratio": 0.268586,
+          "avg_sinad_db": 119.33,
+          "min_sinad_db": 105.11,
+          "max_sinad_db": 135.49,
+          "std_sinad_db": 4.21
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.499,
+          "spectral_flatness_ratio": 0.237597,
+          "avg_sinad_db": 123.87,
+          "min_sinad_db": 76.38,
+          "max_sinad_db": 142.14,
+          "std_sinad_db": 10.78
+        }
+      ],
+      "20Hz-40Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.5017,
+          "spectral_flatness_ratio": 0.233817,
+          "avg_sinad_db": 119.83,
+          "min_sinad_db": 84.07,
+          "max_sinad_db": 138.63,
+          "std_sinad_db": 6.27
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.5007,
+          "spectral_flatness_ratio": 0.262314,
+          "avg_sinad_db": 118.54,
+          "min_sinad_db": 106.06,
+          "max_sinad_db": 130.67,
+          "std_sinad_db": 4.7
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.5003,
           "spectral_flatness_ratio": 0.268586,
           "avg_sinad_db": 119.33,
           "min_sinad_db": 105.11,
@@ -2743,82 +2819,6 @@
           "std_sinad_db": 10.78
         }
       ],
-      "5223Hz-10473Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.5006,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.5006,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.4986,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.4995,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
-        }
-      ],
-      "161Hz-323Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.4987,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.5002,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.4988,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.499,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
-        }
-      ],
       "323Hz-648Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
@@ -2857,10 +2857,10 @@
           "std_sinad_db": 10.78
         }
       ],
-      "20Hz-40Hz": [
+      "2605Hz-5223Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.5017,
+          "quantization_efficiency": 0.4993,
           "spectral_flatness_ratio": 0.233817,
           "avg_sinad_db": 119.83,
           "min_sinad_db": 84.07,
@@ -2869,7 +2869,7 @@
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.5007,
+          "quantization_efficiency": 0.4984,
           "spectral_flatness_ratio": 0.262314,
           "avg_sinad_db": 118.54,
           "min_sinad_db": 106.06,
@@ -2878,7 +2878,7 @@
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.5003,
+          "quantization_efficiency": 0.5002,
           "spectral_flatness_ratio": 0.268586,
           "avg_sinad_db": 119.33,
           "min_sinad_db": 105.11,
@@ -2887,7 +2887,45 @@
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.499,
+          "quantization_efficiency": 0.5,
+          "spectral_flatness_ratio": 0.237597,
+          "avg_sinad_db": 123.87,
+          "min_sinad_db": 76.38,
+          "max_sinad_db": 142.14,
+          "std_sinad_db": 10.78
+        }
+      ],
+      "5223Hz-10473Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.5006,
+          "spectral_flatness_ratio": 0.233817,
+          "avg_sinad_db": 119.83,
+          "min_sinad_db": 84.07,
+          "max_sinad_db": 138.63,
+          "std_sinad_db": 6.27
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.5006,
+          "spectral_flatness_ratio": 0.262314,
+          "avg_sinad_db": 118.54,
+          "min_sinad_db": 106.06,
+          "max_sinad_db": 130.67,
+          "std_sinad_db": 4.7
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.4986,
+          "spectral_flatness_ratio": 0.268586,
+          "avg_sinad_db": 119.33,
+          "min_sinad_db": 105.11,
+          "max_sinad_db": 135.49,
+          "std_sinad_db": 4.21
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.4995,
           "spectral_flatness_ratio": 0.237597,
           "avg_sinad_db": 123.87,
           "min_sinad_db": 76.38,
@@ -2926,44 +2964,6 @@
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "quantization_efficiency": 0.4998,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
-        }
-      ],
-      "2605Hz-5223Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.4993,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.4984,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.5002,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.5,
           "spectral_flatness_ratio": 0.237597,
           "avg_sinad_db": 123.87,
           "min_sinad_db": 76.38,
