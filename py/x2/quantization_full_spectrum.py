@@ -55,12 +55,7 @@ def detect_quantization_artifacts(signal, frame_size=1024):
         windowed = frame * np.hanning(frame_size)
         fft_mag = np.abs(np.fft.fft(windowed))
         
-        # Look for quantization noise patterns
-        # Quantization creates broadband noise floor
-        noise_floor = calculate_noise_floor(fft_mag)
-        
         # Calculate spectral slope (quantization noise is typically flat)
-        freqs = np.arange(len(fft_mag))
         # Focus on mid-to-high frequencies where quantization noise is most apparent
         mid_idx = len(fft_mag) // 4
         high_idx = len(fft_mag) // 2
@@ -77,7 +72,6 @@ def detect_quantization_artifacts(signal, frame_size=1024):
             spectral_slope = -60.0
             
         artifacts.append({
-            'noise_floor_db': noise_floor,
             'spectral_slope_db': spectral_slope
         })
     
@@ -90,7 +84,6 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
 
     frame_size = int(config.get("quantization_full_spectrum::frame_size", 1024))
     bit_depth_tolerance = float(config.get("quantization_full_spectrum::bit_depth_tolerance", 1e-6))
-    noise_percentile = float(config.get("quantization_full_spectrum::noise_percentile", 10))
     
     results = []
 
@@ -118,32 +111,18 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
                 artifacts = detect_quantization_artifacts(signal, frame_size)
                 
                 if artifacts:
-                    avg_noise_floor = np.mean([a['noise_floor_db'] for a in artifacts])
-                    std_noise_floor = np.std([a['noise_floor_db'] for a in artifacts])
                     avg_spectral_slope = np.mean([a['spectral_slope_db'] for a in artifacts])
                     std_spectral_slope = np.std([a['spectral_slope_db'] for a in artifacts])
                 else:
-                    avg_noise_floor = None
-                    std_noise_floor = None
                     avg_spectral_slope = None
                     std_spectral_slope = None
-                
-                # Calculate dynamic range (difference between peak and noise floor)
-                peak_level = 20 * np.log10(np.max(np.abs(signal))) if np.max(np.abs(signal)) > 0 else -120.0
-                if avg_noise_floor is not None:
-                    dynamic_range = peak_level - avg_noise_floor
-                else:
-                    dynamic_range = None
                 
                 # Store results for this channel
                 channel_results = {
                     f"estimated_bits": round(est_bits, 2) if est_bits is not None else None,
                     f"unique_levels": num_levels,
-                    f"avg_noise_floor_db": round(avg_noise_floor, 2) if avg_noise_floor is not None else None,
-                    f"noise_floor_std_db": round(std_noise_floor, 2) if std_noise_floor is not None else None,
                     f"avg_spectral_slope_db": round(avg_spectral_slope, 2) if avg_spectral_slope is not None else None,
-                    f"spectral_slope_std_db": round(std_spectral_slope, 2) if std_spectral_slope is not None else None,
-                    f"dynamic_range_db": round(dynamic_range, 2) if dynamic_range is not None else None
+                    f"std_spectral_slope_db": round(std_spectral_slope, 2) if std_spectral_slope is not None else None,
                 }
                 
                 # Add channel prefix if stereo

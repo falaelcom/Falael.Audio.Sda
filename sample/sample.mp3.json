@@ -388,7 +388,7 @@
           "side_rms": -31.22,
           "width_ratio": 0.8671,
           "presence": 0.5798,
-          "quality": 1.0
+          "quality": 0.8863
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
@@ -414,7 +414,7 @@
           "side_rms": -31.24,
           "width_ratio": 1.0607,
           "presence": 0.6538,
-          "quality": 0.9393
+          "quality": -0.1417
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
@@ -422,7 +422,7 @@
           "side_rms": -28.65,
           "width_ratio": 1.5052,
           "presence": 0.778,
-          "quality": 0.4948
+          "quality": -1.0
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
@@ -456,7 +456,7 @@
           "side_rms": -35.3,
           "width_ratio": 1.1218,
           "presence": 0.6743,
-          "quality": 0.8782
+          "quality": -0.2841
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
@@ -542,181 +542,181 @@
       "20Hz-40Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.4588
+          "coherence": 0.4982
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.1696
+          "coherence": 0.1899
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.5845
+          "coherence": 0.6451
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.3435
+          "coherence": 0.3919
         }
       ],
       "40Hz-80Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.6584
+          "coherence": 0.7061
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.6204
+          "coherence": 0.6405
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.9625
+          "coherence": 0.9739
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.673
+          "coherence": 0.7401
         }
       ],
       "80Hz-161Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.7798
+          "coherence": 0.8056
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.443
+          "coherence": 0.5134
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.7433
+          "coherence": 0.819
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.6455
+          "coherence": 0.6833
         }
       ],
       "161Hz-323Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.8267
+          "coherence": 0.8452
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.351
+          "coherence": 0.3905
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.2987
+          "coherence": 0.3507
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.7118
+          "coherence": 0.7421
         }
       ],
       "323Hz-648Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.843
+          "coherence": 0.85
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.5297
+          "coherence": 0.5354
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.3179
+          "coherence": 0.3164
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.5651
+          "coherence": 0.6012
         }
       ],
       "648Hz-1299Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.7518
+          "coherence": 0.7507
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.1784
+          "coherence": 0.1666
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": -0.1138
+          "coherence": -0.1387
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.1246
+          "coherence": 0.1152
         }
       ],
       "1299Hz-2605Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.7047
+          "coherence": 0.7037
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": -0.1558
+          "coherence": -0.1784
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": -0.3306
+          "coherence": -0.368
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.0718
+          "coherence": 0.0715
         }
       ],
       "2605Hz-5223Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.7914
+          "coherence": 0.7975
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.0828
+          "coherence": 0.0871
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": -0.0883
+          "coherence": -0.0951
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.214
+          "coherence": 0.2337
         }
       ],
       "5223Hz-10473Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.826
+          "coherence": 0.8323
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.2465
+          "coherence": 0.25
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.0579
+          "coherence": 0.0562
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.3036
+          "coherence": 0.3144
         }
       ],
       "10473Hz-21000Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "coherence": 0.8606
+          "coherence": 0.8659
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "coherence": 0.3471
+          "coherence": 0.3441
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "coherence": 0.1643
+          "coherence": 0.1558
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "coherence": 0.4361
+          "coherence": 0.4347
         }
       ]
     }
@@ -910,181 +910,221 @@
       "20Hz-40Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "richness_db": 62.25
+          "spectral_centroid_fraction": 0.4807,
+          "spectral_rolloff_fraction": 0.7191
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "richness_db": 63.24
+          "spectral_centroid_fraction": 0.4814,
+          "spectral_rolloff_fraction": 0.7208
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "richness_db": 63.6
+          "spectral_centroid_fraction": 0.5036,
+          "spectral_rolloff_fraction": 0.7291
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "richness_db": 62.82
+          "spectral_centroid_fraction": 0.4736,
+          "spectral_rolloff_fraction": 0.7015
         }
       ],
       "40Hz-80Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "richness_db": 61.69
+          "spectral_centroid_fraction": 0.4791,
+          "spectral_rolloff_fraction": 0.6825
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "richness_db": 63.3
+          "spectral_centroid_fraction": 0.5471,
+          "spectral_rolloff_fraction": 0.7178
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "richness_db": 63.05
+          "spectral_centroid_fraction": 0.5151,
+          "spectral_rolloff_fraction": 0.6453
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "richness_db": 62.95
+          "spectral_centroid_fraction": 0.4759,
+          "spectral_rolloff_fraction": 0.6474
         }
       ],
       "80Hz-161Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "richness_db": 57.15
+          "spectral_centroid_fraction": 0.5372,
+          "spectral_rolloff_fraction": 0.6932
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "richness_db": 63.92
+          "spectral_centroid_fraction": 0.4692,
+          "spectral_rolloff_fraction": 0.6399
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "richness_db": 63.98
+          "spectral_centroid_fraction": 0.4567,
+          "spectral_rolloff_fraction": 0.5918
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "richness_db": 53.88
+          "spectral_centroid_fraction": 0.5596,
+          "spectral_rolloff_fraction": 0.7533
         }
       ],
       "161Hz-323Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "richness_db": 58.43
+          "spectral_centroid_fraction": 0.5001,
+          "spectral_rolloff_fraction": 0.6853
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "richness_db": 62.75
+          "spectral_centroid_fraction": 0.5116,
+          "spectral_rolloff_fraction": 0.7212
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "richness_db": 62.81
+          "spectral_centroid_fraction": 0.4901,
+          "spectral_rolloff_fraction": 0.7007
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "richness_db": 55.7
+          "spectral_centroid_fraction": 0.3981,
+          "spectral_rolloff_fraction": 0.5477
         }
       ],
       "323Hz-648Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "richness_db": 54.09
+          "spectral_centroid_fraction": 0.3128,
+          "spectral_rolloff_fraction": 0.3474
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "richness_db": 57.24
+          "spectral_centroid_fraction": 0.2961,
+          "spectral_rolloff_fraction": 0.3133
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "richness_db": 57.14
+          "spectral_centroid_fraction": 0.315,
+          "spectral_rolloff_fraction": 0.3491
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "richness_db": 53.15
+          "spectral_centroid_fraction": 0.3306,
+          "spectral_rolloff_fraction": 0.4049
         }
       ],
       "648Hz-1299Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "richness_db": 49.24
+          "spectral_centroid_fraction": 0.4421,
+          "spectral_rolloff_fraction": 0.6304
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "richness_db": 49.76
+          "spectral_centroid_fraction": 0.4519,
+          "spectral_rolloff_fraction": 0.6126
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "richness_db": 49.51
+          "spectral_centroid_fraction": 0.4582,
+          "spectral_rolloff_fraction": 0.6629
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "richness_db": 47.15
+          "spectral_centroid_fraction": 0.4185,
+          "spectral_rolloff_fraction": 0.5964
         }
       ],
       "1299Hz-2605Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "richness_db": 43.04
+          "spectral_centroid_fraction": 0.4445,
+          "spectral_rolloff_fraction": 0.6044
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "richness_db": 43.93
+          "spectral_centroid_fraction": 0.4716,
+          "spectral_rolloff_fraction": 0.6503
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "richness_db": 43.68
+          "spectral_centroid_fraction": 0.4699,
+          "spectral_rolloff_fraction": 0.6444
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "richness_db": 40.82
+          "spectral_centroid_fraction": 0.4052,
+          "spectral_rolloff_fraction": 0.5291
         }
       ],
       "2605Hz-5223Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "richness_db": 35.78
+          "spectral_centroid_fraction": 0.4603,
+          "spectral_rolloff_fraction": 0.6842
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "richness_db": 37.24
+          "spectral_centroid_fraction": 0.4395,
+          "spectral_rolloff_fraction": 0.6365
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "richness_db": 36.69
+          "spectral_centroid_fraction": 0.4257,
+          "spectral_rolloff_fraction": 0.5983
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "richness_db": 33.74
+          "spectral_centroid_fraction": 0.4067,
+          "spectral_rolloff_fraction": 0.5697
         }
       ],
       "5223Hz-10473Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "richness_db": 28.06
+          "spectral_centroid_fraction": 0.4956,
+          "spectral_rolloff_fraction": 0.7436
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "richness_db": 29.48
+          "spectral_centroid_fraction": 0.5031,
+          "spectral_rolloff_fraction": 0.7731
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "richness_db": 29.02
+          "spectral_centroid_fraction": 0.5007,
+          "spectral_rolloff_fraction": 0.7689
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "richness_db": 26.26
+          "spectral_centroid_fraction": 0.4635,
+          "spectral_rolloff_fraction": 0.7135
         }
       ],
       "10473Hz-21000Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "richness_db": 17.46
+          "spectral_centroid_fraction": 0.2113,
+          "spectral_rolloff_fraction": 0.3073
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "richness_db": 18.35
+          "spectral_centroid_fraction": 0.194,
+          "spectral_rolloff_fraction": 0.2886
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "richness_db": 18.32
+          "spectral_centroid_fraction": 0.2087,
+          "spectral_rolloff_fraction": 0.3217
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "richness_db": 16.62
+          "spectral_centroid_fraction": 0.229,
+          "spectral_rolloff_fraction": 0.3209
         }
       ]
     }
@@ -1093,19 +1133,23 @@
     "result": [
       {
         "chunk": "media\\sample.mp3.000.mp3",
-        "spectral_flatness_ratio": 0.233817
+        "overall_spectral_flatness_ratio": 0.233817,
+        "std_overall_spectral_flatness_ratio": 0.165003
       },
       {
         "chunk": "media\\sample.mp3.001.mp3",
-        "spectral_flatness_ratio": 0.262314
+        "overall_spectral_flatness_ratio": 0.262314,
+        "std_overall_spectral_flatness_ratio": 0.13802
       },
       {
         "chunk": "media\\sample.mp3.002.mp3",
-        "spectral_flatness_ratio": 0.268586
+        "overall_spectral_flatness_ratio": 0.268586,
+        "std_overall_spectral_flatness_ratio": 0.119777
       },
       {
         "chunk": "media\\sample.mp3.003.mp3",
-        "spectral_flatness_ratio": 0.237597
+        "overall_spectral_flatness_ratio": 0.237597,
+        "std_overall_spectral_flatness_ratio": 0.267897
       }
     ]
   },
@@ -1303,8 +1347,8 @@
           "crest_factor_db": 22.44,
           "peak_dyn_range_db": 108.97,
           "rms_dyn_range_db": 108.21,
-          "avg_crest_factor_db": 6.8,
-          "crest_factor_std_db": -8.47
+          "avg_crest_factor_db": 6.68,
+          "std_crest_factor_db": 1.36
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
@@ -1313,8 +1357,8 @@
           "crest_factor_db": 18.94,
           "peak_dyn_range_db": 39.75,
           "rms_dyn_range_db": 39.67,
-          "avg_crest_factor_db": 6.91,
-          "crest_factor_std_db": -9.01
+          "avg_crest_factor_db": 6.81,
+          "std_crest_factor_db": 1.27
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
@@ -1323,8 +1367,8 @@
           "crest_factor_db": 16.0,
           "peak_dyn_range_db": 45.7,
           "rms_dyn_range_db": 45.05,
-          "avg_crest_factor_db": 6.61,
-          "crest_factor_std_db": -10.05
+          "avg_crest_factor_db": 6.52,
+          "std_crest_factor_db": 1.23
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
@@ -1333,8 +1377,8 @@
           "crest_factor_db": 26.17,
           "peak_dyn_range_db": 170.23,
           "rms_dyn_range_db": 170.7,
-          "avg_crest_factor_db": 6.83,
-          "crest_factor_std_db": -5.64
+          "avg_crest_factor_db": 6.69,
+          "std_crest_factor_db": 1.46
         }
       ],
       "40Hz-80Hz": [
@@ -1345,8 +1389,8 @@
           "crest_factor_db": 27.26,
           "peak_dyn_range_db": 183.18,
           "rms_dyn_range_db": 184.55,
-          "avg_crest_factor_db": 8.32,
-          "crest_factor_std_db": -6.94
+          "avg_crest_factor_db": 8.21,
+          "std_crest_factor_db": 1.4
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
@@ -1355,8 +1399,8 @@
           "crest_factor_db": 11.19,
           "peak_dyn_range_db": 50.45,
           "rms_dyn_range_db": 53.34,
-          "avg_crest_factor_db": 6.21,
-          "crest_factor_std_db": -4.08
+          "avg_crest_factor_db": 5.85,
+          "std_crest_factor_db": 2.43
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
@@ -1365,8 +1409,8 @@
           "crest_factor_db": 9.71,
           "peak_dyn_range_db": 55.61,
           "rms_dyn_range_db": 59.68,
-          "avg_crest_factor_db": 4.58,
-          "crest_factor_std_db": -7.41
+          "avg_crest_factor_db": 4.39,
+          "std_crest_factor_db": 1.68
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
@@ -1375,8 +1419,8 @@
           "crest_factor_db": 14.56,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 7.51,
-          "crest_factor_std_db": -4.11
+          "avg_crest_factor_db": 7.04,
+          "std_crest_factor_db": 3.87
         }
       ],
       "80Hz-161Hz": [
@@ -1387,8 +1431,8 @@
           "crest_factor_db": 16.63,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 7.24,
-          "crest_factor_std_db": -5.55
+          "avg_crest_factor_db": 6.82,
+          "std_crest_factor_db": 4.55
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
@@ -1397,8 +1441,8 @@
           "crest_factor_db": 12.57,
           "peak_dyn_range_db": 23.48,
           "rms_dyn_range_db": 24.18,
-          "avg_crest_factor_db": 6.67,
-          "crest_factor_std_db": -8.15
+          "avg_crest_factor_db": 6.54,
+          "std_crest_factor_db": 1.48
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
@@ -1407,8 +1451,8 @@
           "crest_factor_db": 12.05,
           "peak_dyn_range_db": 43.61,
           "rms_dyn_range_db": 44.7,
-          "avg_crest_factor_db": 6.27,
-          "crest_factor_std_db": -9.33
+          "avg_crest_factor_db": 6.15,
+          "std_crest_factor_db": 1.39
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
@@ -1417,8 +1461,8 @@
           "crest_factor_db": 14.46,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 6.66,
-          "crest_factor_std_db": -2.62
+          "avg_crest_factor_db": 4.36,
+          "std_crest_factor_db": 16.03
         }
       ],
       "161Hz-323Hz": [
@@ -1429,8 +1473,8 @@
           "crest_factor_db": 16.79,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 8.07,
-          "crest_factor_std_db": -3.89
+          "avg_crest_factor_db": 6.74,
+          "std_crest_factor_db": 15.29
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
@@ -1439,8 +1483,8 @@
           "crest_factor_db": 15.81,
           "peak_dyn_range_db": 23.77,
           "rms_dyn_range_db": 24.52,
-          "avg_crest_factor_db": 8.14,
-          "crest_factor_std_db": -8.38
+          "avg_crest_factor_db": 8.05,
+          "std_crest_factor_db": 1.28
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
@@ -1449,8 +1493,8 @@
           "crest_factor_db": 15.97,
           "peak_dyn_range_db": 41.4,
           "rms_dyn_range_db": 41.44,
-          "avg_crest_factor_db": 8.33,
-          "crest_factor_std_db": -6.28
+          "avg_crest_factor_db": 8.19,
+          "std_crest_factor_db": 1.52
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
@@ -1459,8 +1503,8 @@
           "crest_factor_db": 15.66,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 7.4,
-          "crest_factor_std_db": 0.29
+          "avg_crest_factor_db": 0.15,
+          "std_crest_factor_db": 42.6
         }
       ],
       "323Hz-648Hz": [
@@ -1471,8 +1515,8 @@
           "crest_factor_db": 13.87,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 8.14,
-          "crest_factor_std_db": -1.75
+          "avg_crest_factor_db": 4.46,
+          "std_crest_factor_db": 39.3
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
@@ -1481,8 +1525,8 @@
           "crest_factor_db": 13.17,
           "peak_dyn_range_db": 25.25,
           "rms_dyn_range_db": 28.0,
-          "avg_crest_factor_db": 7.85,
-          "crest_factor_std_db": -3.93
+          "avg_crest_factor_db": 7.6,
+          "std_crest_factor_db": 2.0
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
@@ -1491,8 +1535,8 @@
           "crest_factor_db": 14.64,
           "peak_dyn_range_db": 41.41,
           "rms_dyn_range_db": 42.47,
-          "avg_crest_factor_db": 8.13,
-          "crest_factor_std_db": -4.52
+          "avg_crest_factor_db": 7.93,
+          "std_crest_factor_db": 1.84
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
@@ -1501,8 +1545,8 @@
           "crest_factor_db": 16.75,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 8.88,
-          "crest_factor_std_db": 3.14
+          "avg_crest_factor_db": -9.29,
+          "std_crest_factor_db": 100.17
         }
       ],
       "648Hz-1299Hz": [
@@ -1513,8 +1557,8 @@
           "crest_factor_db": 16.64,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 9.9,
-          "crest_factor_std_db": -0.43
+          "avg_crest_factor_db": 2.73,
+          "std_crest_factor_db": 79.29
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
@@ -1523,8 +1567,8 @@
           "crest_factor_db": 16.57,
           "peak_dyn_range_db": 23.05,
           "rms_dyn_range_db": 25.02,
-          "avg_crest_factor_db": 9.55,
-          "crest_factor_std_db": -4.45
+          "avg_crest_factor_db": 9.39,
+          "std_crest_factor_db": 1.61
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
@@ -1533,8 +1577,8 @@
           "crest_factor_db": 19.11,
           "peak_dyn_range_db": 45.11,
           "rms_dyn_range_db": 49.0,
-          "avg_crest_factor_db": 10.14,
-          "crest_factor_std_db": -3.33
+          "avg_crest_factor_db": 9.99,
+          "std_crest_factor_db": 1.59
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
@@ -1543,8 +1587,8 @@
           "crest_factor_db": 23.5,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 10.8,
-          "crest_factor_std_db": 4.23
+          "avg_crest_factor_db": -25.88,
+          "std_crest_factor_db": 202.75
         }
       ],
       "1299Hz-2605Hz": [
@@ -1555,8 +1599,8 @@
           "crest_factor_db": 23.25,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 11.59,
-          "crest_factor_std_db": 2.13
+          "avg_crest_factor_db": -2.75,
+          "std_crest_factor_db": 160.23
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
@@ -1565,8 +1609,8 @@
           "crest_factor_db": 20.16,
           "peak_dyn_range_db": 21.8,
           "rms_dyn_range_db": 21.36,
-          "avg_crest_factor_db": 11.16,
-          "crest_factor_std_db": -3.73
+          "avg_crest_factor_db": 11.04,
+          "std_crest_factor_db": 1.42
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
@@ -1575,8 +1619,8 @@
           "crest_factor_db": 20.25,
           "peak_dyn_range_db": 45.68,
           "rms_dyn_range_db": 44.49,
-          "avg_crest_factor_db": 11.36,
-          "crest_factor_std_db": -0.14
+          "avg_crest_factor_db": 11.17,
+          "std_crest_factor_db": 1.64
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
@@ -1585,8 +1629,8 @@
           "crest_factor_db": 21.31,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 11.68,
-          "crest_factor_std_db": 4.35
+          "avg_crest_factor_db": -63.6,
+          "std_crest_factor_db": 416.83
         }
       ],
       "2605Hz-5223Hz": [
@@ -1597,8 +1641,8 @@
           "crest_factor_db": 21.57,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 15.73,
-          "crest_factor_std_db": 15.99
+          "avg_crest_factor_db": -16.39,
+          "std_crest_factor_db": 334.94
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
@@ -1607,8 +1651,8 @@
           "crest_factor_db": 22.26,
           "peak_dyn_range_db": 31.64,
           "rms_dyn_range_db": 29.58,
-          "avg_crest_factor_db": 12.76,
-          "crest_factor_std_db": 0.08
+          "avg_crest_factor_db": 12.57,
+          "std_crest_factor_db": 1.75
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
@@ -1617,8 +1661,8 @@
           "crest_factor_db": 22.27,
           "peak_dyn_range_db": 43.25,
           "rms_dyn_range_db": 42.5,
-          "avg_crest_factor_db": 12.5,
-          "crest_factor_std_db": 0.98
+          "avg_crest_factor_db": 12.29,
+          "std_crest_factor_db": 1.77
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
@@ -1627,8 +1671,8 @@
           "crest_factor_db": 23.54,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 58.65,
-          "crest_factor_std_db": 80.11
+          "avg_crest_factor_db": -57.66,
+          "std_crest_factor_db": 455.33
         }
       ],
       "5223Hz-10473Hz": [
@@ -1639,8 +1683,8 @@
           "crest_factor_db": 25.06,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 23.2,
-          "crest_factor_std_db": 31.83
+          "avg_crest_factor_db": -34.18,
+          "std_crest_factor_db": 527.7
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
@@ -1649,8 +1693,8 @@
           "crest_factor_db": 23.2,
           "peak_dyn_range_db": 50.47,
           "rms_dyn_range_db": 49.3,
-          "avg_crest_factor_db": 14.14,
-          "crest_factor_std_db": 1.92
+          "avg_crest_factor_db": 13.91,
+          "std_crest_factor_db": 1.95
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
@@ -1659,8 +1703,8 @@
           "crest_factor_db": 23.03,
           "peak_dyn_range_db": 53.59,
           "rms_dyn_range_db": 56.8,
-          "avg_crest_factor_db": 14.16,
-          "crest_factor_std_db": 2.83
+          "avg_crest_factor_db": 13.91,
+          "std_crest_factor_db": 1.98
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
@@ -1669,8 +1713,8 @@
           "crest_factor_db": 26.83,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 96.08,
-          "crest_factor_std_db": 117.6
+          "avg_crest_factor_db": -75.4,
+          "std_crest_factor_db": 656.98
         }
       ],
       "10473Hz-21000Hz": [
@@ -1681,8 +1725,8 @@
           "crest_factor_db": 27.13,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 120.0,
-          "avg_crest_factor_db": 26.67,
-          "crest_factor_std_db": 35.97
+          "avg_crest_factor_db": -35.11,
+          "std_crest_factor_db": 536.87
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
@@ -1691,8 +1735,8 @@
           "crest_factor_db": 22.65,
           "peak_dyn_range_db": 52.27,
           "rms_dyn_range_db": 53.32,
-          "avg_crest_factor_db": 14.13,
-          "crest_factor_std_db": 2.94
+          "avg_crest_factor_db": 13.85,
+          "std_crest_factor_db": 2.15
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
@@ -1701,8 +1745,8 @@
           "crest_factor_db": 23.21,
           "peak_dyn_range_db": 53.67,
           "rms_dyn_range_db": 53.08,
-          "avg_crest_factor_db": 14.35,
-          "crest_factor_std_db": 3.3
+          "avg_crest_factor_db": 14.07,
+          "std_crest_factor_db": 2.08
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
@@ -1711,8 +1755,8 @@
           "crest_factor_db": 26.66,
           "peak_dyn_range_db": 120.0,
           "rms_dyn_range_db": 176.94,
-          "avg_crest_factor_db": 25.04,
-          "crest_factor_std_db": 43.47
+          "avg_crest_factor_db": -60.2,
+          "std_crest_factor_db": 635.39
         }
       ]
     }
@@ -1726,8 +1770,8 @@
         "crest_factor_db": 15.09,
         "peak_dyn_range_db": 96.41,
         "rms_dyn_range_db": 121.59,
-        "avg_crest_factor_db": 10.03,
-        "crest_factor_std_db": 7.58
+        "avg_crest_factor_db": 9.47,
+        "std_crest_factor_db": 2.48
       },
       {
         "chunk": "media\\sample.mp3.001.mp3",
@@ -1736,8 +1780,8 @@
         "crest_factor_db": 12.96,
         "peak_dyn_range_db": 11.89,
         "rms_dyn_range_db": 15.2,
-        "avg_crest_factor_db": 9.35,
-        "crest_factor_std_db": -6.22
+        "avg_crest_factor_db": 9.23,
+        "std_crest_factor_db": 1.42
       },
       {
         "chunk": "media\\sample.mp3.002.mp3",
@@ -1746,8 +1790,8 @@
         "crest_factor_db": 11.81,
         "peak_dyn_range_db": 40.05,
         "rms_dyn_range_db": 39.87,
-        "avg_crest_factor_db": 8.82,
-        "crest_factor_std_db": -3.13
+        "avg_crest_factor_db": 8.64,
+        "std_crest_factor_db": 1.67
       },
       {
         "chunk": "media\\sample.mp3.003.mp3",
@@ -1756,8 +1800,8 @@
         "crest_factor_db": 16.3,
         "peak_dyn_range_db": 182.28,
         "rms_dyn_range_db": 195.66,
-        "avg_crest_factor_db": 10.84,
-        "crest_factor_std_db": 10.99
+        "avg_crest_factor_db": 9.04,
+        "std_crest_factor_db": 4.58
       }
     ]
   },
@@ -1768,41 +1812,29 @@
           "chunk": "media\\sample.mp3.000.mp3",
           "estimated_bits": 13.3,
           "unique_levels": 5060,
-          "avg_noise_floor_db": -197.57,
-          "noise_floor_std_db": 14.14,
           "avg_spectral_slope_db": 110.34,
-          "spectral_slope_std_db": 4.27,
-          "dynamic_range_db": 155.62
+          "std_spectral_slope_db": 4.27
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
           "estimated_bits": 14.63,
           "unique_levels": 12696,
-          "avg_noise_floor_db": -187.55,
-          "noise_floor_std_db": 9.68,
           "avg_spectral_slope_db": 112.55,
-          "spectral_slope_std_db": 5.84,
-          "dynamic_range_db": 152.59
+          "std_spectral_slope_db": 5.84
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "estimated_bits": 15.34,
           "unique_levels": 20750,
-          "avg_noise_floor_db": -178.26,
-          "noise_floor_std_db": 10.62,
           "avg_spectral_slope_db": 114.65,
-          "spectral_slope_std_db": 5.82,
-          "dynamic_range_db": 148.33
+          "std_spectral_slope_db": 5.82
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "estimated_bits": 13.41,
           "unique_levels": 5431,
-          "avg_noise_floor_db": -209.2,
-          "noise_floor_std_db": 31.76,
           "avg_spectral_slope_db": 111.2,
-          "spectral_slope_std_db": 5.19,
-          "dynamic_range_db": 172.99
+          "std_spectral_slope_db": 5.19
         }
       ],
       "40Hz-80Hz": [
@@ -1810,41 +1842,29 @@
           "chunk": "media\\sample.mp3.000.mp3",
           "estimated_bits": 15.05,
           "unique_levels": 17012,
-          "avg_noise_floor_db": -191.19,
-          "noise_floor_std_db": 17.98,
           "avg_spectral_slope_db": 118.79,
-          "spectral_slope_std_db": 6.21,
-          "dynamic_range_db": 167.51
+          "std_spectral_slope_db": 6.21
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
           "estimated_bits": 17.9,
           "unique_levels": 122275,
-          "avg_noise_floor_db": -168.94,
-          "noise_floor_std_db": 17.97,
           "avg_spectral_slope_db": 118.43,
-          "spectral_slope_std_db": 4.55,
-          "dynamic_range_db": 154.89
+          "std_spectral_slope_db": 4.55
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "estimated_bits": 18.64,
           "unique_levels": 204714,
-          "avg_noise_floor_db": -153.28,
-          "noise_floor_std_db": 13.26,
           "avg_spectral_slope_db": 117.25,
-          "spectral_slope_std_db": 3.18,
-          "dynamic_range_db": 143.29
+          "std_spectral_slope_db": 3.18
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "estimated_bits": 16.62,
           "unique_levels": 50206,
-          "avg_noise_floor_db": -199.33,
-          "noise_floor_std_db": 42.57,
           "avg_spectral_slope_db": 117.84,
-          "spectral_slope_std_db": 5.6,
-          "dynamic_range_db": 181.2
+          "std_spectral_slope_db": 5.6
         }
       ],
       "80Hz-161Hz": [
@@ -1852,41 +1872,29 @@
           "chunk": "media\\sample.mp3.000.mp3",
           "estimated_bits": 17.16,
           "unique_levels": 73219,
-          "avg_noise_floor_db": -169.94,
-          "noise_floor_std_db": 27.66,
           "avg_spectral_slope_db": 119.31,
-          "spectral_slope_std_db": 5.65,
-          "dynamic_range_db": 153.91
+          "std_spectral_slope_db": 5.65
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
           "estimated_bits": 17.9,
           "unique_levels": 122230,
-          "avg_noise_floor_db": -158.35,
-          "noise_floor_std_db": 8.32,
           "avg_spectral_slope_db": 119.26,
-          "spectral_slope_std_db": 4.91,
-          "dynamic_range_db": 144.95
+          "std_spectral_slope_db": 4.91
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "estimated_bits": 18.59,
           "unique_levels": 196758,
-          "avg_noise_floor_db": -153.7,
-          "noise_floor_std_db": 11.88,
           "avg_spectral_slope_db": 118.96,
-          "spectral_slope_std_db": 4.56,
-          "dynamic_range_db": 145.22
+          "std_spectral_slope_db": 4.56
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "estimated_bits": 17.14,
           "unique_levels": 72075,
-          "avg_noise_floor_db": -184.73,
-          "noise_floor_std_db": 63.87,
           "avg_spectral_slope_db": 119.01,
-          "spectral_slope_std_db": 6.02,
-          "dynamic_range_db": 168.25
+          "std_spectral_slope_db": 6.02
         }
       ],
       "161Hz-323Hz": [
@@ -1894,41 +1902,29 @@
           "chunk": "media\\sample.mp3.000.mp3",
           "estimated_bits": 18.34,
           "unique_levels": 165466,
-          "avg_noise_floor_db": -160.52,
-          "noise_floor_std_db": 41.18,
           "avg_spectral_slope_db": 119.98,
-          "spectral_slope_std_db": 5.65,
-          "dynamic_range_db": 153.8
+          "std_spectral_slope_db": 5.65
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
           "estimated_bits": 18.4,
           "unique_levels": 173009,
-          "avg_noise_floor_db": -154.11,
-          "noise_floor_std_db": 8.53,
           "avg_spectral_slope_db": 120.85,
-          "spectral_slope_std_db": 5.47,
-          "dynamic_range_db": 147.08
+          "std_spectral_slope_db": 5.47
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "estimated_bits": 18.43,
           "unique_levels": 176170,
-          "avg_noise_floor_db": -153.64,
-          "noise_floor_std_db": 9.66,
           "avg_spectral_slope_db": 120.86,
-          "spectral_slope_std_db": 5.76,
-          "dynamic_range_db": 147.22
+          "std_spectral_slope_db": 5.76
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "estimated_bits": 17.64,
           "unique_levels": 101923,
-          "avg_noise_floor_db": -187.82,
-          "noise_floor_std_db": 95.69,
           "avg_spectral_slope_db": 119.56,
-          "spectral_slope_std_db": 5.79,
-          "dynamic_range_db": 176.59
+          "std_spectral_slope_db": 5.79
         }
       ],
       "323Hz-648Hz": [
@@ -1936,41 +1932,29 @@
           "chunk": "media\\sample.mp3.000.mp3",
           "estimated_bits": 18.3,
           "unique_levels": 161337,
-          "avg_noise_floor_db": -165.13,
-          "noise_floor_std_db": 67.94,
           "avg_spectral_slope_db": 120.52,
-          "spectral_slope_std_db": 5.96,
-          "dynamic_range_db": 155.18
+          "std_spectral_slope_db": 5.96
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
           "estimated_bits": 18.57,
           "unique_levels": 194048,
-          "avg_noise_floor_db": -153.28,
-          "noise_floor_std_db": 9.94,
           "avg_spectral_slope_db": 120.66,
-          "spectral_slope_std_db": 5.2,
-          "dynamic_range_db": 145.14
+          "std_spectral_slope_db": 5.2
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "estimated_bits": 18.38,
           "unique_levels": 170404,
-          "avg_noise_floor_db": -154.0,
-          "noise_floor_std_db": 10.44,
           "avg_spectral_slope_db": 120.88,
-          "spectral_slope_std_db": 5.19,
-          "dynamic_range_db": 145.75
+          "std_spectral_slope_db": 5.19
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "estimated_bits": 17.43,
           "unique_levels": 88411,
-          "avg_noise_floor_db": -207.84,
-          "noise_floor_std_db": 160.96,
           "avg_spectral_slope_db": 119.87,
-          "spectral_slope_std_db": 6.67,
-          "dynamic_range_db": 196.32
+          "std_spectral_slope_db": 6.67
         }
       ],
       "648Hz-1299Hz": [
@@ -1978,41 +1962,29 @@
           "chunk": "media\\sample.mp3.000.mp3",
           "estimated_bits": 17.83,
           "unique_levels": 116860,
-          "avg_noise_floor_db": -175.38,
-          "noise_floor_std_db": 114.49,
           "avg_spectral_slope_db": 119.39,
-          "spectral_slope_std_db": 7.7,
-          "dynamic_range_db": 163.76
+          "std_spectral_slope_db": 7.7
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
           "estimated_bits": 17.9,
           "unique_levels": 122102,
-          "avg_noise_floor_db": -159.45,
-          "noise_floor_std_db": 8.55,
           "avg_spectral_slope_db": 118.84,
-          "spectral_slope_std_db": 6.87,
-          "dynamic_range_db": 148.52
+          "std_spectral_slope_db": 6.87
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "estimated_bits": 17.6,
           "unique_levels": 99333,
-          "avg_noise_floor_db": -162.11,
-          "noise_floor_std_db": 9.47,
           "avg_spectral_slope_db": 118.22,
-          "spectral_slope_std_db": 6.43,
-          "dynamic_range_db": 151.23
+          "std_spectral_slope_db": 6.43
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "estimated_bits": 16.48,
           "unique_levels": 45743,
-          "avg_noise_floor_db": -240.24,
-          "noise_floor_std_db": 282.56,
           "avg_spectral_slope_db": 117.71,
-          "spectral_slope_std_db": 10.52,
-          "dynamic_range_db": 228.37
+          "std_spectral_slope_db": 10.52
         }
       ],
       "1299Hz-2605Hz": [
@@ -2020,41 +1992,29 @@
           "chunk": "media\\sample.mp3.000.mp3",
           "estimated_bits": 17.07,
           "unique_levels": 68730,
-          "avg_noise_floor_db": -184.04,
-          "noise_floor_std_db": 191.84,
           "avg_spectral_slope_db": 103.68,
-          "spectral_slope_std_db": 11.43,
-          "dynamic_range_db": 172.92
+          "std_spectral_slope_db": 11.43
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
           "estimated_bits": 17.31,
           "unique_levels": 81324,
-          "avg_noise_floor_db": -160.02,
-          "noise_floor_std_db": 7.0,
           "avg_spectral_slope_db": 102.6,
-          "spectral_slope_std_db": 10.14,
-          "dynamic_range_db": 148.42
+          "std_spectral_slope_db": 10.14
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "estimated_bits": 17.23,
           "unique_levels": 76682,
-          "avg_noise_floor_db": -161.15,
-          "noise_floor_std_db": 8.89,
           "avg_spectral_slope_db": 100.6,
-          "spectral_slope_std_db": 8.58,
-          "dynamic_range_db": 149.21
+          "std_spectral_slope_db": 8.58
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "estimated_bits": 16.27,
           "unique_levels": 39382,
-          "avg_noise_floor_db": -246.34,
-          "noise_floor_std_db": 351.28,
           "avg_spectral_slope_db": 103.44,
-          "spectral_slope_std_db": 12.88,
-          "dynamic_range_db": 228.52
+          "std_spectral_slope_db": 12.88
         }
       ],
       "2605Hz-5223Hz": [
@@ -2062,41 +2022,29 @@
           "chunk": "media\\sample.mp3.000.mp3",
           "estimated_bits": 16.41,
           "unique_levels": 43477,
-          "avg_noise_floor_db": -175.91,
-          "noise_floor_std_db": 135.55,
           "avg_spectral_slope_db": 75.37,
-          "spectral_slope_std_db": 9.36,
-          "dynamic_range_db": 157.7
+          "std_spectral_slope_db": 9.36
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
           "estimated_bits": 16.83,
           "unique_levels": 58069,
-          "avg_noise_floor_db": -159.72,
-          "noise_floor_std_db": 7.54,
           "avg_spectral_slope_db": 75.07,
-          "spectral_slope_std_db": 9.04,
-          "dynamic_range_db": 146.23
+          "std_spectral_slope_db": 9.04
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "estimated_bits": 16.7,
           "unique_levels": 53251,
-          "avg_noise_floor_db": -160.28,
-          "noise_floor_std_db": 9.04,
           "avg_spectral_slope_db": 72.8,
-          "spectral_slope_std_db": 7.07,
-          "dynamic_range_db": 146.25
+          "std_spectral_slope_db": 7.07
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "estimated_bits": 15.79,
           "unique_levels": 28327,
-          "avg_noise_floor_db": -223.46,
-          "noise_floor_std_db": 273.77,
           "avg_spectral_slope_db": 73.14,
-          "spectral_slope_std_db": 8.57,
-          "dynamic_range_db": 203.71
+          "std_spectral_slope_db": 8.57
         }
       ],
       "5223Hz-10473Hz": [
@@ -2104,41 +2052,29 @@
           "chunk": "media\\sample.mp3.000.mp3",
           "estimated_bits": 16.55,
           "unique_levels": 48028,
-          "avg_noise_floor_db": -168.85,
-          "noise_floor_std_db": 103.11,
           "avg_spectral_slope_db": 33.74,
-          "spectral_slope_std_db": 5.64,
-          "dynamic_range_db": 154.5
+          "std_spectral_slope_db": 5.64
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
           "estimated_bits": 16.97,
           "unique_levels": 64265,
-          "avg_noise_floor_db": -154.05,
-          "noise_floor_std_db": 10.25,
           "avg_spectral_slope_db": 34.53,
-          "spectral_slope_std_db": 5.62,
-          "dynamic_range_db": 141.61
+          "std_spectral_slope_db": 5.62
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "estimated_bits": 16.98,
           "unique_levels": 64455,
-          "avg_noise_floor_db": -154.05,
-          "noise_floor_std_db": 11.14,
           "avg_spectral_slope_db": 32.98,
-          "spectral_slope_std_db": 4.3,
-          "dynamic_range_db": 141.58
+          "std_spectral_slope_db": 4.3
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "estimated_bits": 15.74,
           "unique_levels": 27338,
-          "avg_noise_floor_db": -200.31,
-          "noise_floor_std_db": 193.24,
           "avg_spectral_slope_db": 31.71,
-          "spectral_slope_std_db": 5.69,
-          "dynamic_range_db": 183.58
+          "std_spectral_slope_db": 5.69
         }
       ],
       "10473Hz-21000Hz": [
@@ -2146,41 +2082,29 @@
           "chunk": "media\\sample.mp3.000.mp3",
           "estimated_bits": 15.74,
           "unique_levels": 27400,
-          "avg_noise_floor_db": -126.94,
-          "noise_floor_std_db": 94.89,
           "avg_spectral_slope_db": 3.51,
-          "spectral_slope_std_db": 3.15,
-          "dynamic_range_db": 107.59
+          "std_spectral_slope_db": 3.15
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
           "estimated_bits": 16.1,
           "unique_levels": 35159,
-          "avg_noise_floor_db": -116.72,
-          "noise_floor_std_db": 3.39,
           "avg_spectral_slope_db": 4.58,
-          "spectral_slope_std_db": 3.65,
-          "dynamic_range_db": 96.72
+          "std_spectral_slope_db": 3.65
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "estimated_bits": 16.18,
           "unique_levels": 37187,
-          "avg_noise_floor_db": -116.06,
-          "noise_floor_std_db": 6.38,
           "avg_spectral_slope_db": 3.09,
-          "spectral_slope_std_db": 2.53,
-          "dynamic_range_db": 97.26
+          "std_spectral_slope_db": 2.53
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "estimated_bits": 14.9,
           "unique_levels": 15280,
-          "avg_noise_floor_db": -151.19,
-          "noise_floor_std_db": 178.56,
           "avg_spectral_slope_db": 2.54,
-          "spectral_slope_std_db": 3.31,
-          "dynamic_range_db": 126.84
+          "std_spectral_slope_db": 3.31
         }
       ]
     }
@@ -2191,97 +2115,61 @@
         "chunk": "media\\sample.mp3.000.mp3",
         "left_estimated_bits": 18.82,
         "left_unique_levels": 230861,
-        "left_avg_noise_floor_db": -107.95,
-        "left_noise_floor_std_db": 11.9,
         "left_avg_spectral_slope_db": 32.69,
-        "left_spectral_slope_std_db": 10.85,
-        "left_dynamic_range_db": 103.98,
+        "left_std_spectral_slope_db": 10.85,
         "right_estimated_bits": 18.8,
         "right_unique_levels": 227445,
-        "right_avg_noise_floor_db": -108.51,
-        "right_noise_floor_std_db": 11.82,
         "right_avg_spectral_slope_db": 32.66,
-        "right_spectral_slope_std_db": 10.95,
-        "right_dynamic_range_db": 103.62,
+        "right_std_spectral_slope_db": 10.95,
         "mono_estimated_bits": 18.77,
         "mono_unique_levels": 223956,
-        "mono_avg_noise_floor_db": -108.91,
-        "mono_noise_floor_std_db": 11.88,
         "mono_avg_spectral_slope_db": 32.48,
-        "mono_spectral_slope_std_db": 11.0,
-        "mono_dynamic_range_db": 104.41
+        "mono_std_spectral_slope_db": 11.0
       },
       {
         "chunk": "media\\sample.mp3.001.mp3",
         "left_estimated_bits": 19.15,
         "left_unique_levels": 290612,
-        "left_avg_noise_floor_db": -99.35,
-        "left_noise_floor_std_db": 3.44,
         "left_avg_spectral_slope_db": 30.87,
-        "left_spectral_slope_std_db": 9.83,
-        "left_dynamic_range_db": 96.43,
+        "left_std_spectral_slope_db": 9.83,
         "right_estimated_bits": 19.15,
         "right_unique_levels": 290748,
-        "right_avg_noise_floor_db": -99.84,
-        "right_noise_floor_std_db": 3.68,
         "right_avg_spectral_slope_db": 31.75,
-        "right_spectral_slope_std_db": 10.72,
-        "right_dynamic_range_db": 96.3,
+        "right_std_spectral_slope_db": 10.72,
         "mono_estimated_bits": 19.05,
         "mono_unique_levels": 271212,
-        "mono_avg_noise_floor_db": -102.27,
-        "mono_noise_floor_std_db": 3.86,
         "mono_avg_spectral_slope_db": 30.62,
-        "mono_spectral_slope_std_db": 10.03,
-        "mono_dynamic_range_db": 98.37
+        "mono_std_spectral_slope_db": 10.03
       },
       {
         "chunk": "media\\sample.mp3.002.mp3",
         "left_estimated_bits": 19.36,
         "left_unique_levels": 336774,
-        "left_avg_noise_floor_db": -98.26,
-        "left_noise_floor_std_db": 6.65,
         "left_avg_spectral_slope_db": 28.47,
-        "left_spectral_slope_std_db": 7.46,
-        "left_dynamic_range_db": 96.14,
+        "left_std_spectral_slope_db": 7.46,
         "right_estimated_bits": 19.37,
         "right_unique_levels": 339553,
-        "right_avg_noise_floor_db": -98.6,
-        "right_noise_floor_std_db": 6.31,
         "right_avg_spectral_slope_db": 29.78,
-        "right_spectral_slope_std_db": 7.73,
-        "right_dynamic_range_db": 95.89,
+        "right_std_spectral_slope_db": 7.73,
         "mono_estimated_bits": 19.26,
         "mono_unique_levels": 313183,
-        "mono_avg_noise_floor_db": -101.71,
-        "mono_noise_floor_std_db": 6.61,
         "mono_avg_spectral_slope_db": 28.76,
-        "mono_spectral_slope_std_db": 7.7,
-        "mono_dynamic_range_db": 98.58
+        "mono_std_spectral_slope_db": 7.7
       },
       {
         "chunk": "media\\sample.mp3.003.mp3",
         "left_estimated_bits": 18.1,
         "left_unique_levels": 140374,
-        "left_avg_noise_floor_db": -121.27,
-        "left_noise_floor_std_db": 26.66,
         "left_avg_spectral_slope_db": 37.08,
-        "left_spectral_slope_std_db": 16.04,
-        "left_dynamic_range_db": 114.97,
+        "left_std_spectral_slope_db": 16.04,
         "right_estimated_bits": 18.1,
         "right_unique_levels": 140744,
-        "right_avg_noise_floor_db": -121.1,
-        "right_noise_floor_std_db": 25.83,
         "right_avg_spectral_slope_db": 36.9,
-        "right_spectral_slope_std_db": 16.07,
-        "right_dynamic_range_db": 114.94,
+        "right_std_spectral_slope_db": 16.07,
         "mono_estimated_bits": 18.08,
         "mono_unique_levels": 138074,
-        "mono_avg_noise_floor_db": -123.05,
-        "mono_noise_floor_std_db": 26.32,
         "mono_avg_spectral_slope_db": 37.47,
-        "mono_spectral_slope_std_db": 16.9,
-        "mono_dynamic_range_db": 116.54
+        "mono_std_spectral_slope_db": 16.9
       }
     ]
   },
@@ -2290,300 +2178,260 @@
       "20Hz-40Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "peak_to_noise_ratio_db": 155.61,
-          "signal_to_noise_ratio_db": 133.18,
-          "overall_avg_crest_factor_db": 10.03,
+          "overall_avg_crest_factor_db": 9.47,
+          "overall_std_crest_factor_db": 2.48,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "peak_to_noise_ratio_db": 152.59,
-          "signal_to_noise_ratio_db": 133.65,
-          "overall_avg_crest_factor_db": 9.35,
+          "overall_avg_crest_factor_db": 9.23,
+          "overall_std_crest_factor_db": 1.42,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "peak_to_noise_ratio_db": 148.34,
-          "signal_to_noise_ratio_db": 132.34,
-          "overall_avg_crest_factor_db": 8.82,
+          "overall_avg_crest_factor_db": 8.64,
+          "overall_std_crest_factor_db": 1.67,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "peak_to_noise_ratio_db": 172.99,
-          "signal_to_noise_ratio_db": 146.81,
-          "overall_avg_crest_factor_db": 10.84,
+          "overall_avg_crest_factor_db": 9.04,
+          "overall_std_crest_factor_db": 4.58,
           "error": null
         }
       ],
       "40Hz-80Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "peak_to_noise_ratio_db": 167.52,
-          "signal_to_noise_ratio_db": 140.26,
-          "overall_avg_crest_factor_db": 10.03,
+          "overall_avg_crest_factor_db": 9.47,
+          "overall_std_crest_factor_db": 2.48,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "peak_to_noise_ratio_db": 154.89,
-          "signal_to_noise_ratio_db": 143.71,
-          "overall_avg_crest_factor_db": 9.35,
+          "overall_avg_crest_factor_db": 9.23,
+          "overall_std_crest_factor_db": 1.42,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "peak_to_noise_ratio_db": 143.29,
-          "signal_to_noise_ratio_db": 133.57,
-          "overall_avg_crest_factor_db": 8.82,
+          "overall_avg_crest_factor_db": 8.64,
+          "overall_std_crest_factor_db": 1.67,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "peak_to_noise_ratio_db": 181.2,
-          "signal_to_noise_ratio_db": 166.63,
-          "overall_avg_crest_factor_db": 10.84,
+          "overall_avg_crest_factor_db": 9.04,
+          "overall_std_crest_factor_db": 4.58,
           "error": null
         }
       ],
       "80Hz-161Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "peak_to_noise_ratio_db": 153.92,
-          "signal_to_noise_ratio_db": 137.29,
-          "overall_avg_crest_factor_db": 10.03,
+          "overall_avg_crest_factor_db": 9.47,
+          "overall_std_crest_factor_db": 2.48,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "peak_to_noise_ratio_db": 144.95,
-          "signal_to_noise_ratio_db": 132.38,
-          "overall_avg_crest_factor_db": 9.35,
+          "overall_avg_crest_factor_db": 9.23,
+          "overall_std_crest_factor_db": 1.42,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "peak_to_noise_ratio_db": 145.23,
-          "signal_to_noise_ratio_db": 133.17,
-          "overall_avg_crest_factor_db": 8.82,
+          "overall_avg_crest_factor_db": 8.64,
+          "overall_std_crest_factor_db": 1.67,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "peak_to_noise_ratio_db": 168.25,
-          "signal_to_noise_ratio_db": 153.79,
-          "overall_avg_crest_factor_db": 10.84,
+          "overall_avg_crest_factor_db": 9.04,
+          "overall_std_crest_factor_db": 4.58,
           "error": null
         }
       ],
       "161Hz-323Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "peak_to_noise_ratio_db": 153.8,
-          "signal_to_noise_ratio_db": 137.01,
-          "overall_avg_crest_factor_db": 10.03,
+          "overall_avg_crest_factor_db": 9.47,
+          "overall_std_crest_factor_db": 2.48,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "peak_to_noise_ratio_db": 147.08,
-          "signal_to_noise_ratio_db": 131.27,
-          "overall_avg_crest_factor_db": 9.35,
+          "overall_avg_crest_factor_db": 9.23,
+          "overall_std_crest_factor_db": 1.42,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "peak_to_noise_ratio_db": 147.22,
-          "signal_to_noise_ratio_db": 131.25,
-          "overall_avg_crest_factor_db": 8.82,
+          "overall_avg_crest_factor_db": 8.64,
+          "overall_std_crest_factor_db": 1.67,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "peak_to_noise_ratio_db": 176.59,
-          "signal_to_noise_ratio_db": 160.92,
-          "overall_avg_crest_factor_db": 10.84,
+          "overall_avg_crest_factor_db": 9.04,
+          "overall_std_crest_factor_db": 4.58,
           "error": null
         }
       ],
       "323Hz-648Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "peak_to_noise_ratio_db": 155.17,
-          "signal_to_noise_ratio_db": 141.3,
-          "overall_avg_crest_factor_db": 10.03,
+          "overall_avg_crest_factor_db": 9.47,
+          "overall_std_crest_factor_db": 2.48,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "peak_to_noise_ratio_db": 145.15,
-          "signal_to_noise_ratio_db": 131.97,
-          "overall_avg_crest_factor_db": 9.35,
+          "overall_avg_crest_factor_db": 9.23,
+          "overall_std_crest_factor_db": 1.42,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "peak_to_noise_ratio_db": 145.75,
-          "signal_to_noise_ratio_db": 131.1,
-          "overall_avg_crest_factor_db": 8.82,
+          "overall_avg_crest_factor_db": 8.64,
+          "overall_std_crest_factor_db": 1.67,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "peak_to_noise_ratio_db": 196.32,
-          "signal_to_noise_ratio_db": 179.57,
-          "overall_avg_crest_factor_db": 10.84,
+          "overall_avg_crest_factor_db": 9.04,
+          "overall_std_crest_factor_db": 4.58,
           "error": null
         }
       ],
       "648Hz-1299Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "peak_to_noise_ratio_db": 163.75,
-          "signal_to_noise_ratio_db": 147.12,
-          "overall_avg_crest_factor_db": 10.03,
+          "overall_avg_crest_factor_db": 9.47,
+          "overall_std_crest_factor_db": 2.48,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "peak_to_noise_ratio_db": 148.52,
-          "signal_to_noise_ratio_db": 131.95,
-          "overall_avg_crest_factor_db": 9.35,
+          "overall_avg_crest_factor_db": 9.23,
+          "overall_std_crest_factor_db": 1.42,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "peak_to_noise_ratio_db": 151.24,
-          "signal_to_noise_ratio_db": 132.13,
-          "overall_avg_crest_factor_db": 8.82,
+          "overall_avg_crest_factor_db": 8.64,
+          "overall_std_crest_factor_db": 1.67,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "peak_to_noise_ratio_db": 228.38,
-          "signal_to_noise_ratio_db": 204.88,
-          "overall_avg_crest_factor_db": 10.84,
+          "overall_avg_crest_factor_db": 9.04,
+          "overall_std_crest_factor_db": 4.58,
           "error": null
         }
       ],
       "1299Hz-2605Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "peak_to_noise_ratio_db": 172.91,
-          "signal_to_noise_ratio_db": 149.67,
-          "overall_avg_crest_factor_db": 10.03,
+          "overall_avg_crest_factor_db": 9.47,
+          "overall_std_crest_factor_db": 2.48,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "peak_to_noise_ratio_db": 148.43,
-          "signal_to_noise_ratio_db": 128.27,
-          "overall_avg_crest_factor_db": 9.35,
+          "overall_avg_crest_factor_db": 9.23,
+          "overall_std_crest_factor_db": 1.42,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "peak_to_noise_ratio_db": 149.21,
-          "signal_to_noise_ratio_db": 128.95,
-          "overall_avg_crest_factor_db": 8.82,
+          "overall_avg_crest_factor_db": 8.64,
+          "overall_std_crest_factor_db": 1.67,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "peak_to_noise_ratio_db": 228.52,
-          "signal_to_noise_ratio_db": 207.21,
-          "overall_avg_crest_factor_db": 10.84,
+          "overall_avg_crest_factor_db": 9.04,
+          "overall_std_crest_factor_db": 4.58,
           "error": null
         }
       ],
       "2605Hz-5223Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "peak_to_noise_ratio_db": 157.7,
-          "signal_to_noise_ratio_db": 136.13,
-          "overall_avg_crest_factor_db": 10.03,
+          "overall_avg_crest_factor_db": 9.47,
+          "overall_std_crest_factor_db": 2.48,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "peak_to_noise_ratio_db": 146.23,
-          "signal_to_noise_ratio_db": 123.96,
-          "overall_avg_crest_factor_db": 9.35,
+          "overall_avg_crest_factor_db": 9.23,
+          "overall_std_crest_factor_db": 1.42,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "peak_to_noise_ratio_db": 146.26,
-          "signal_to_noise_ratio_db": 123.99,
-          "overall_avg_crest_factor_db": 8.82,
+          "overall_avg_crest_factor_db": 8.64,
+          "overall_std_crest_factor_db": 1.67,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "peak_to_noise_ratio_db": 203.71,
-          "signal_to_noise_ratio_db": 180.18,
-          "overall_avg_crest_factor_db": 10.84,
+          "overall_avg_crest_factor_db": 9.04,
+          "overall_std_crest_factor_db": 4.58,
           "error": null
         }
       ],
       "5223Hz-10473Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "peak_to_noise_ratio_db": 154.5,
-          "signal_to_noise_ratio_db": 129.44,
-          "overall_avg_crest_factor_db": 10.03,
+          "overall_avg_crest_factor_db": 9.47,
+          "overall_std_crest_factor_db": 2.48,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "peak_to_noise_ratio_db": 141.61,
-          "signal_to_noise_ratio_db": 118.41,
-          "overall_avg_crest_factor_db": 9.35,
+          "overall_avg_crest_factor_db": 9.23,
+          "overall_std_crest_factor_db": 1.42,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "peak_to_noise_ratio_db": 141.58,
-          "signal_to_noise_ratio_db": 118.55,
-          "overall_avg_crest_factor_db": 8.82,
+          "overall_avg_crest_factor_db": 8.64,
+          "overall_std_crest_factor_db": 1.67,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "peak_to_noise_ratio_db": 183.58,
-          "signal_to_noise_ratio_db": 156.75,
-          "overall_avg_crest_factor_db": 10.84,
+          "overall_avg_crest_factor_db": 9.04,
+          "overall_std_crest_factor_db": 4.58,
           "error": null
         }
       ],
       "10473Hz-21000Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "peak_to_noise_ratio_db": 107.58,
-          "signal_to_noise_ratio_db": 80.45,
-          "overall_avg_crest_factor_db": 10.03,
+          "overall_avg_crest_factor_db": 9.47,
+          "overall_std_crest_factor_db": 2.48,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "peak_to_noise_ratio_db": 96.73,
-          "signal_to_noise_ratio_db": 74.07,
-          "overall_avg_crest_factor_db": 9.35,
+          "overall_avg_crest_factor_db": 9.23,
+          "overall_std_crest_factor_db": 1.42,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "peak_to_noise_ratio_db": 97.26,
-          "signal_to_noise_ratio_db": 74.06,
-          "overall_avg_crest_factor_db": 8.82,
+          "overall_avg_crest_factor_db": 8.64,
+          "overall_std_crest_factor_db": 1.67,
           "error": null
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "peak_to_noise_ratio_db": 126.84,
-          "signal_to_noise_ratio_db": 100.19,
-          "overall_avg_crest_factor_db": 10.84,
+          "overall_avg_crest_factor_db": 9.04,
+          "overall_std_crest_factor_db": 4.58,
           "error": null
         }
       ]
@@ -2591,384 +2439,264 @@
   },
   "audio_quality": {
     "result": {
-      "1299Hz-2605Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.4995,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.5005,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.4988,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.4984,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
-        }
-      ],
-      "40Hz-80Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.5015,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.4999,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.5011,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.4985,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
-        }
-      ],
-      "161Hz-323Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.4987,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.5002,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.4988,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.499,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
-        }
-      ],
       "80Hz-161Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
           "quantization_efficiency": 0.5,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
           "quantization_efficiency": 0.4997,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "quantization_efficiency": 0.4986,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
+          "overall_spectral_flatness_ratio": 0.268586,
+          "std_overall_spectral_flatness_ratio": 0.119777
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "quantization_efficiency": 0.499,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
-        }
-      ],
-      "20Hz-40Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.5017,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.5007,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.5003,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.499,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
-        }
-      ],
-      "648Hz-1299Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.5015,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.4992,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.5,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.5004,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
-        }
-      ],
-      "323Hz-648Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.4999,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.4986,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.4995,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.5007,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
-        }
-      ],
-      "2605Hz-5223Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.4993,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.4984,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.5002,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.5,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
+          "overall_spectral_flatness_ratio": 0.237597,
+          "std_overall_spectral_flatness_ratio": 0.267897
         }
       ],
       "5223Hz-10473Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
           "quantization_efficiency": 0.5006,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
           "quantization_efficiency": 0.5006,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "quantization_efficiency": 0.4986,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
+          "overall_spectral_flatness_ratio": 0.268586,
+          "std_overall_spectral_flatness_ratio": 0.119777
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "quantization_efficiency": 0.4995,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
+          "overall_spectral_flatness_ratio": 0.237597,
+          "std_overall_spectral_flatness_ratio": 0.267897
+        }
+      ],
+      "2605Hz-5223Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.4993,
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.4984,
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.5002,
+          "overall_spectral_flatness_ratio": 0.268586,
+          "std_overall_spectral_flatness_ratio": 0.119777
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.5,
+          "overall_spectral_flatness_ratio": 0.237597,
+          "std_overall_spectral_flatness_ratio": 0.267897
         }
       ],
       "10473Hz-21000Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
           "quantization_efficiency": 0.5007,
-          "spectral_flatness_ratio": 0.233817,
-          "avg_sinad_db": 119.83,
-          "min_sinad_db": 84.07,
-          "max_sinad_db": 138.63,
-          "std_sinad_db": 6.27
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
           "quantization_efficiency": 0.5006,
-          "spectral_flatness_ratio": 0.262314,
-          "avg_sinad_db": 118.54,
-          "min_sinad_db": 106.06,
-          "max_sinad_db": 130.67,
-          "std_sinad_db": 4.7
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
           "quantization_efficiency": 0.5009,
-          "spectral_flatness_ratio": 0.268586,
-          "avg_sinad_db": 119.33,
-          "min_sinad_db": 105.11,
-          "max_sinad_db": 135.49,
-          "std_sinad_db": 4.21
+          "overall_spectral_flatness_ratio": 0.268586,
+          "std_overall_spectral_flatness_ratio": 0.119777
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "quantization_efficiency": 0.4998,
-          "spectral_flatness_ratio": 0.237597,
-          "avg_sinad_db": 123.87,
-          "min_sinad_db": 76.38,
-          "max_sinad_db": 142.14,
-          "std_sinad_db": 10.78
+          "overall_spectral_flatness_ratio": 0.237597,
+          "std_overall_spectral_flatness_ratio": 0.267897
+        }
+      ],
+      "648Hz-1299Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.5015,
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.4992,
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.5,
+          "overall_spectral_flatness_ratio": 0.268586,
+          "std_overall_spectral_flatness_ratio": 0.119777
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.5004,
+          "overall_spectral_flatness_ratio": 0.237597,
+          "std_overall_spectral_flatness_ratio": 0.267897
+        }
+      ],
+      "20Hz-40Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.5017,
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.5007,
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.5003,
+          "overall_spectral_flatness_ratio": 0.268586,
+          "std_overall_spectral_flatness_ratio": 0.119777
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.499,
+          "overall_spectral_flatness_ratio": 0.237597,
+          "std_overall_spectral_flatness_ratio": 0.267897
+        }
+      ],
+      "161Hz-323Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.4987,
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.5002,
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.4988,
+          "overall_spectral_flatness_ratio": 0.268586,
+          "std_overall_spectral_flatness_ratio": 0.119777
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.499,
+          "overall_spectral_flatness_ratio": 0.237597,
+          "std_overall_spectral_flatness_ratio": 0.267897
+        }
+      ],
+      "40Hz-80Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.5015,
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.4999,
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.5011,
+          "overall_spectral_flatness_ratio": 0.268586,
+          "std_overall_spectral_flatness_ratio": 0.119777
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.4985,
+          "overall_spectral_flatness_ratio": 0.237597,
+          "std_overall_spectral_flatness_ratio": 0.267897
+        }
+      ],
+      "323Hz-648Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.4999,
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.4986,
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.4995,
+          "overall_spectral_flatness_ratio": 0.268586,
+          "std_overall_spectral_flatness_ratio": 0.119777
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.5007,
+          "overall_spectral_flatness_ratio": 0.237597,
+          "std_overall_spectral_flatness_ratio": 0.267897
+        }
+      ],
+      "1299Hz-2605Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.4995,
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.5005,
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.4988,
+          "overall_spectral_flatness_ratio": 0.268586,
+          "std_overall_spectral_flatness_ratio": 0.119777
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.4984,
+          "overall_spectral_flatness_ratio": 0.237597,
+          "std_overall_spectral_flatness_ratio": 0.267897
         }
       ]
     }
@@ -2978,29 +2706,23 @@
       "output_paths": [
         "out\\sample.mp3\\fingerprint\\btm.zicv.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\btm.zich.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.audio_quality--avg_sinad_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.audio_quality--std_sinad_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.audio_quality--spectral_flatness_ratio.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.harmonics--richness_db.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\btm.stereo_width--presence.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\btm.stereo_width--quality.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\btm.stereo_correlation--correlation.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\btm.stereo_phase--coherence.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.quantization--avg_noise_floor_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.quantization--noise_floor_std_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.quantization--dynamic_range_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.dynamic_range--peak_to_noise_ratio_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.dynamic_range--signal_to_noise_ratio_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.dynamic_range--overall_avg_crest_factor_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.dynamics--crest_factor_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.dynamics--avg_crest_factor_db.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\btm.sparkle--sparkle.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\btm.harmonics--spectral_centroid_fraction.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\btm.harmonics--spectral_rolloff_fraction.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\btm.freq_response--avg_magnitude_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.quantization--estimated_bits.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.quantization--unique_levels.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\btm.audio_quality--overall_spectral_flatness_ratio.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\btm.audio_quality--std_overall_spectral_flatness_ratio.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\btm.dynamic_range--overall_avg_crest_factor_db.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\btm.dynamic_range--overall_std_crest_factor_db.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\btm.audio_quality--quantization_efficiency.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\btm.quantization--avg_spectral_slope_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.quantization--spectral_slope_std_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\btm.sparkle--sparkle.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\btm.quantization--std_spectral_slope_db.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\btm.quantization--unique_levels.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\btm.quantization--estimated_bits.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\bmt.zicv.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\bmt.zich.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\bmt.00.00 - 00.30.sample.mp3.png",
@@ -3009,29 +2731,23 @@
         "out\\sample.mp3\\fingerprint\\bmt.01.30 - 02.00.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\tbm.zicv.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\tbm.zich.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.audio_quality--avg_sinad_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.audio_quality--std_sinad_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.audio_quality--spectral_flatness_ratio.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.harmonics--richness_db.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\tbm.stereo_width--presence.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\tbm.stereo_width--quality.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\tbm.stereo_correlation--correlation.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\tbm.stereo_phase--coherence.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.quantization--avg_noise_floor_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.quantization--noise_floor_std_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.quantization--dynamic_range_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.dynamic_range--peak_to_noise_ratio_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.dynamic_range--signal_to_noise_ratio_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.dynamic_range--overall_avg_crest_factor_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.dynamics--crest_factor_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.dynamics--avg_crest_factor_db.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\tbm.sparkle--sparkle.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\tbm.harmonics--spectral_centroid_fraction.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\tbm.harmonics--spectral_rolloff_fraction.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\tbm.freq_response--avg_magnitude_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.quantization--estimated_bits.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.quantization--unique_levels.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\tbm.audio_quality--overall_spectral_flatness_ratio.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\tbm.audio_quality--std_overall_spectral_flatness_ratio.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\tbm.dynamic_range--overall_avg_crest_factor_db.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\tbm.dynamic_range--overall_std_crest_factor_db.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\tbm.audio_quality--quantization_efficiency.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\tbm.quantization--avg_spectral_slope_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.quantization--spectral_slope_std_db.sample.mp3.png",
-        "out\\sample.mp3\\fingerprint\\tbm.sparkle--sparkle.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\tbm.quantization--std_spectral_slope_db.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\tbm.quantization--unique_levels.sample.mp3.png",
+        "out\\sample.mp3\\fingerprint\\tbm.quantization--estimated_bits.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\tmb.zicv.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\tmb.zich.sample.mp3.png",
         "out\\sample.mp3\\fingerprint\\tmb.00020Hz-00040Hz.sample.mp3.png",
@@ -3069,29 +2785,23 @@
           "output_paths": [
             "out\\sample.mp3\\fingerprint\\btm.zicv.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\btm.zich.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.audio_quality--avg_sinad_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.audio_quality--std_sinad_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.audio_quality--spectral_flatness_ratio.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.harmonics--richness_db.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\btm.stereo_width--presence.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\btm.stereo_width--quality.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\btm.stereo_correlation--correlation.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\btm.stereo_phase--coherence.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.quantization--avg_noise_floor_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.quantization--noise_floor_std_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.quantization--dynamic_range_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.dynamic_range--peak_to_noise_ratio_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.dynamic_range--signal_to_noise_ratio_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.dynamic_range--overall_avg_crest_factor_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.dynamics--crest_factor_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.dynamics--avg_crest_factor_db.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\btm.sparkle--sparkle.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\btm.harmonics--spectral_centroid_fraction.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\btm.harmonics--spectral_rolloff_fraction.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\btm.freq_response--avg_magnitude_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.quantization--estimated_bits.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.quantization--unique_levels.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\btm.audio_quality--overall_spectral_flatness_ratio.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\btm.audio_quality--std_overall_spectral_flatness_ratio.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\btm.dynamic_range--overall_avg_crest_factor_db.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\btm.dynamic_range--overall_std_crest_factor_db.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\btm.audio_quality--quantization_efficiency.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\btm.quantization--avg_spectral_slope_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.quantization--spectral_slope_std_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\btm.sparkle--sparkle.sample.mp3.png"
+            "out\\sample.mp3\\fingerprint\\btm.quantization--std_spectral_slope_db.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\btm.quantization--unique_levels.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\btm.quantization--estimated_bits.sample.mp3.png"
           ],
           "permutation": "btm"
         },
@@ -3110,29 +2820,23 @@
           "output_paths": [
             "out\\sample.mp3\\fingerprint\\tbm.zicv.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\tbm.zich.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.audio_quality--avg_sinad_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.audio_quality--std_sinad_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.audio_quality--spectral_flatness_ratio.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.harmonics--richness_db.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\tbm.stereo_width--presence.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\tbm.stereo_width--quality.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\tbm.stereo_correlation--correlation.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\tbm.stereo_phase--coherence.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.quantization--avg_noise_floor_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.quantization--noise_floor_std_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.quantization--dynamic_range_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.dynamic_range--peak_to_noise_ratio_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.dynamic_range--signal_to_noise_ratio_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.dynamic_range--overall_avg_crest_factor_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.dynamics--crest_factor_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.dynamics--avg_crest_factor_db.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\tbm.sparkle--sparkle.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\tbm.harmonics--spectral_centroid_fraction.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\tbm.harmonics--spectral_rolloff_fraction.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\tbm.freq_response--avg_magnitude_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.quantization--estimated_bits.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.quantization--unique_levels.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\tbm.audio_quality--overall_spectral_flatness_ratio.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\tbm.audio_quality--std_overall_spectral_flatness_ratio.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\tbm.dynamic_range--overall_avg_crest_factor_db.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\tbm.dynamic_range--overall_std_crest_factor_db.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\tbm.audio_quality--quantization_efficiency.sample.mp3.png",
             "out\\sample.mp3\\fingerprint\\tbm.quantization--avg_spectral_slope_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.quantization--spectral_slope_std_db.sample.mp3.png",
-            "out\\sample.mp3\\fingerprint\\tbm.sparkle--sparkle.sample.mp3.png"
+            "out\\sample.mp3\\fingerprint\\tbm.quantization--std_spectral_slope_db.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\tbm.quantization--unique_levels.sample.mp3.png",
+            "out\\sample.mp3\\fingerprint\\tbm.quantization--estimated_bits.sample.mp3.png"
           ],
           "permutation": "tbm"
         },

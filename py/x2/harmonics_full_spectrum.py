@@ -35,15 +35,19 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
                 flatness_values.append(spectral_flatness(mag))
 
             avg_flatness = float(np.mean(flatness_values)) if flatness_values else None
+            std_flatness = float(np.std(flatness_values)) if flatness_values else None
+            
             results.append({
                 "chunk": chunk,
-                "spectral_flatness_ratio": round(avg_flatness, 6) if avg_flatness is not None else None
+                "overall_spectral_flatness_ratio": round(avg_flatness, 6) if avg_flatness is not None else None,
+                "std_overall_spectral_flatness_ratio": round(std_flatness, 6) if std_flatness is not None else None
             })
 
         except Exception as e:
             results.append({
                 "chunk": chunk,
-                "spectral_flatness_ratio": None,
+                "overall_spectral_flatness_ratio": None,
+                "std_overall_spectral_flatness_ratio": None,
                 "error": str(e)
             })
 

@@ -11,10 +11,10 @@ from x1 import split
 from x2 import stereo_correlation, stereo_width, stereo_phase, sparkle, harmonics, harmonics_full_spectrum, freq_response, dynamics, dynamics_full_spectrum, quantization, quantization_full_spectrum
 from x3 import dynamic_range, audio_quality
 from x4 import image_fingerprint
-#ALWAYS_RUN = ['audio_quality', 'harmonics', 'image_fingerprint']
 #ALWAYS_RUN = ['stereo_phase']
-#ALWAYS_RUN = ['image_fingerprint']
-#ALWAYS_RUN = ['audio_quality', 'image_fingerprint']
+#ALWAYS_RUN = ['dynamics', 'dynamics_full_spectrum', 'dynamic_range', 'image_fingerprint']
+#ALWAYS_RUN = ['harmonics', 'harmonics_full_spectrum', 'audio_quality', 'image_fingerprint']
+#ALWAYS_RUN = ['stereo_width', 'image_fingerprint']
 ALWAYS_RUN = []
 MODULES = {
     # x1
@@ -45,11 +45,12 @@ MODULES = {
 OUT_DIR = "out"
 SRC_DIR = "src"
 CONFIG = {
-    "split::duration": "0:30",
     "split::sox_path": r"..\win32\sox-14.4.2-20250323-x64\sox.exe",
+
+    "split::duration": "0:30",
     "sparkle::frame_ms": 20,
     "sparkle::min_frequency_hz": 1300,
-    "stereo_phase::fft_size": 128,
+    "stereo_phase::fft_size": 1024,
     "stereo_phase::overlap": 0.5,
     "harmonics::fft_size": 4096,
     "harmonics::hop_size": 2048, 
@@ -60,20 +61,13 @@ CONFIG = {
     "freq_response::overlap": 0.5,
     "dynamics::frame_ms": 100,
     "dynamics_full_spectrum::frame_ms": 100,
-    "sinad::fft_size": 4096,
-    "sinad::overlap": 0.5,
-    "sinad::noise_percentile": 10,
     "multiband::cutoff_low_freqHz": 20,
     "multiband::cutoff_high_freqHz": 21000,
     "multiband::bands": 10,
     "quantization::frame_size": 1024,
     "quantization::bit_depth_tolerance": 1e-6,
-    "quantization::noise_percentile": 10,
     "quantization_full_spectrum::frame_size": 1024,
     "quantization_full_spectrum::bit_depth_tolerance": 1e-6,
-    "quantization_full_spectrum::noise_percentile": 10,
-    "dynamic_range::noise_floor_fallback_db": -96.0,
-    "audio_quality::flatness_db_floor": 0.0,
 }
 
 # app

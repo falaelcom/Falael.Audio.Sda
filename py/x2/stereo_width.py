@@ -101,15 +101,14 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
                    presence = 1 - np.exp(-width_ratio * 2.0 / 2.0)
                    
                    # Quality: piecewise function
-                   if width_ratio < 1.0:
-                       quality = 1.0  # Perfect quality
-                   elif width_ratio <= 2.0:
-                       quality = 1.0 - (width_ratio - 1.0) / (2.0 - 1.0)  # Linear decline [1.0 → 0.0]
-                   elif width_ratio <= 2.3:
-                       # Fast decline [0.0 → -0.95]
-                       quality = -0.95 * (width_ratio - 2.0) / (2.3 - 2.0)
-                   else:
-                       quality = -1.0  # Completely broken
+                   if width_ratio < 0.85:        # Professional range - most healthy content
+                       quality = 1.0
+                   elif width_ratio <= 1.0:      # Acceptable but getting wide
+                       quality = 1.0 - (width_ratio - 0.85) / (1.0 - 0.85)  # [1.0 → 0.0]
+                   elif width_ratio <= 1.3:      # Problematic territory
+                       quality = -0.7 * (width_ratio - 1.0) / (1.3 - 1.0)   # [0.0 → -0.7]
+                   else:                         # Severely problematic
+                       quality = -1.0
                else:
                    presence = None
                    quality = None

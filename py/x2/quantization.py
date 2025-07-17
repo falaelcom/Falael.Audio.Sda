@@ -85,7 +85,7 @@ def detect_quantization_artifacts(signal, frame_size=1024):
    
    return artifacts
 
-def analyze_band_quantization(band_signal, frame_size, bit_depth_tolerance, noise_percentile, chunk, range_key):
+def analyze_band_quantization(band_signal, frame_size, bit_depth_tolerance, chunk, range_key):
    """Analyze quantization for a single frequency band"""
    try:
        # Estimate bit depth
@@ -95,32 +95,20 @@ def analyze_band_quantization(band_signal, frame_size, bit_depth_tolerance, nois
        artifacts = detect_quantization_artifacts(band_signal, frame_size)
        
        if artifacts:
-           avg_noise_floor = np.mean([a['noise_floor_db'] for a in artifacts])
            std_noise_floor = np.std([a['noise_floor_db'] for a in artifacts])
            avg_spectral_slope = np.mean([a['spectral_slope_db'] for a in artifacts])
            std_spectral_slope = np.std([a['spectral_slope_db'] for a in artifacts])
        else:
-           avg_noise_floor = None
            std_noise_floor = None
            avg_spectral_slope = None
            std_spectral_slope = None
-       
-       # Calculate dynamic range (difference between peak and noise floor)
-       peak_level = 20 * np.log10(np.max(np.abs(band_signal))) if np.max(np.abs(band_signal)) > 0 else -120.0
-       if avg_noise_floor is not None:
-           dynamic_range = peak_level - avg_noise_floor
-       else:
-           dynamic_range = None
        
        return {
            "chunk": chunk,
            "estimated_bits": round(est_bits, 2) if est_bits is not None else None,
            "unique_levels": num_levels,
-           "avg_noise_floor_db": round(avg_noise_floor, 2) if avg_noise_floor is not None else None,
-           "noise_floor_std_db": round(std_noise_floor, 2) if std_noise_floor is not None else None,
            "avg_spectral_slope_db": round(avg_spectral_slope, 2) if avg_spectral_slope is not None else None,
-           "spectral_slope_std_db": round(std_spectral_slope, 2) if std_spectral_slope is not None else None,
-           "dynamic_range_db": round(dynamic_range, 2) if dynamic_range is not None else None
+           "std_spectral_slope_db": round(std_spectral_slope, 2) if std_spectral_slope is not None else None,
        }
 
    except Exception as e:
@@ -128,11 +116,8 @@ def analyze_band_quantization(band_signal, frame_size, bit_depth_tolerance, nois
            "chunk": chunk,
            "estimated_bits": None,
            "unique_levels": None,
-           "avg_noise_floor_db": None,
-           "noise_floor_std_db": None,
            "avg_spectral_slope_db": None,
-           "spectral_slope_std_db": None,
-           "dynamic_range_db": None,
+           "std_spectral_slope_db": None,
            "error": str(e)
        }
 
@@ -144,7 +129,6 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
    # Get configuration
    frame_size = int(config.get("quantization::frame_size", 1024))
    bit_depth_tolerance = float(config.get("quantization::bit_depth_tolerance", 1e-6))
-   noise_percentile = float(config.get("quantization::noise_percentile", 10))
    low_hz = int(config.get("multiband::cutoff_low_freqHz", 200))
    high_hz = int(config.get("multiband::cutoff_high_freqHz", 21000))
    bands = int(config.get("multiband::bands", 6))
@@ -179,11 +163,8 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
                    "chunk": chunk,
                    "estimated_bits": None,
                    "unique_levels": None,
-                   "avg_noise_floor_db": None,
-                   "noise_floor_std_db": None,
                    "avg_spectral_slope_db": None,
-                   "spectral_slope_std_db": None,
-                   "dynamic_range_db": None,
+                   "std_spectral_slope_db": None,
                    "error": str(e)
                })
            continue
@@ -199,7 +180,7 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
                band_signal = bandpass(data, rate, f_low, f_high)
                
                # Analyze quantization for this band
-               band_result = analyze_band_quantization(band_signal, frame_size, bit_depth_tolerance, noise_percentile, chunk, range_key)
+               band_result = analyze_band_quantization(band_signal, frame_size, bit_depth_tolerance, chunk, range_key)
                output[range_key].append(band_result)
 
            except Exception as e:
@@ -207,11 +188,8 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
                    "chunk": chunk,
                    "estimated_bits": None,
                    "unique_levels": None,
-                   "avg_noise_floor_db": None,
-                   "noise_floor_std_db": None,
                    "avg_spectral_slope_db": None,
-                   "spectral_slope_std_db": None,
-                   "dynamic_range_db": None,
+                   "std_spectral_slope_db": None,
                    "error": str(e)
                })
 

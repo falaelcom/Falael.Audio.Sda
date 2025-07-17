@@ -2,32 +2,50 @@
 import numpy as np
 import soundfile as sf
 import time
+from scipy import signal
 
 from .lib.bandpass_filter import bandpass
 
 def calculate_phase_coherence(left_band, right_band, fft_size=256, overlap=0.75):
-    """Calculate true phase coherence between two signals using FFT phase analysis"""
+    """Calculate true phase coherence between two signals using STFT"""
     signal_length = len(left_band)
     
     # If signal is shorter than FFT size, return neutral coherence value
     if signal_length < fft_size:
         return 0.5  # Neutral coherence when phase analysis not possible
     
-    step_size = int(fft_size * (1 - overlap))
+    # Calculate noverlap for scipy.signal.stft
+    noverlap = int(fft_size * overlap)
+    
+    # Compute STFT for both channels
+    f_left, t_left, Zxx_left = signal.stft(
+        left_band, 
+        fs=1.0,  # Normalized frequency since we don't need actual frequencies
+        window='hann', 
+        nperseg=fft_size, 
+        noverlap=noverlap
+    )
+    
+    f_right, t_right, Zxx_right = signal.stft(
+        right_band, 
+        fs=1.0, 
+        window='hann', 
+        nperseg=fft_size, 
+        noverlap=noverlap
+    )
+    
+    # Get number of time frames
+    n_frames = Zxx_left.shape[1]
+    
+    if n_frames == 0:
+        return None
+    
     phase_coherence_values = []
     
-    for i in range(0, len(left_band) - fft_size, step_size):
-        left_frame = left_band[i:i+fft_size]
-        right_frame = right_band[i:i+fft_size]
-        
-        # Apply window
-        window = np.hanning(fft_size)
-        left_windowed = left_frame * window
-        right_windowed = right_frame * window
-        
-        # FFT to get complex spectra
-        left_fft = np.fft.fft(left_windowed)
-        right_fft = np.fft.fft(right_windowed)
+    # Process each time frame
+    for frame_idx in range(n_frames):
+        left_fft = Zxx_left[:, frame_idx]
+        right_fft = Zxx_right[:, frame_idx]
         
         # Extract phases
         phase_left = np.angle(left_fft)
@@ -95,14 +113,19 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
     completed_operations = 0
     start_time = time.time()
     
-    print(f"    Processing {len(chunk_list)} chunks across {bands} frequency bands." f" Total operations: {total_operations}")
+    # Enable progress printing for smaller FFT sizes that need more operations
+    enable_progress = fft_size < 1024
+    
+    if enable_progress:
+        print(f"    Processing {len(chunk_list)} chunks across {bands} frequency bands." f" Total operations: {total_operations}")
 
     for chunk_idx, chunk in enumerate(chunk_list):
         chunk_path = os.path.join(out_path, chunk)
         
         # Chunk-level progress
         chunk_start_time = time.time()
-        print(f"    Chunk {chunk_idx + 1}/{len(chunk_list)}: {chunk}")
+        if enable_progress:
+            print(f"    Chunk {chunk_idx + 1}/{len(chunk_list)}: {chunk}")
         
         try:
             data, rate = sf.read(chunk_path)
@@ -122,7 +145,7 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
                 # Progress update for failed chunk
                 elapsed_time = time.time() - start_time
                 percent_complete = (completed_operations / total_operations) * 100
-                if completed_operations > 0:
+                if completed_operations > 0 and enable_progress:
                     eta_seconds = (elapsed_time / completed_operations) * (total_operations - completed_operations)
                     eta_minutes = eta_seconds / 60
                     print(f"      ERROR: Not stereo - Progress: {percent_complete:.1f}% | ETA: {eta_minutes:.1f}m")
@@ -147,7 +170,7 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
             # Progress update for failed chunk
             elapsed_time = time.time() - start_time
             percent_complete = (completed_operations / total_operations) * 100
-            if completed_operations > 0:
+            if completed_operations > 0 and enable_progress:
                 eta_seconds = (elapsed_time / completed_operations) * (total_operations - completed_operations)
                 eta_minutes = eta_seconds / 60
                 print(f"      ERROR: {str(e)} - Progress: {percent_complete:.1f}% | ETA: {eta_minutes:.1f}m")
@@ -160,7 +183,8 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
             range_key = f"{int(f_low)}Hz-{int(f_high)}Hz"
 
             # Show what we're about to process
-            print(f"      Band {i+1}/{bands}: {range_key}...", end=" ", flush=True)
+            if enable_progress:
+                print(f"      Band {i+1}/{bands}: {range_key}...", end=" ", flush=True)
             band_start_time = time.time()
 
             try:
@@ -182,17 +206,19 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
                     "coherence": None,
                     "error": str(e)
                 })
-                print(f"ERROR: {str(e)}", end=" ", flush=True)
+                if enable_progress:
+                    print(f"ERROR: {str(e)}", end=" ", flush=True)
 
             # Show band completion time
             band_elapsed = time.time() - band_start_time
-            print(f"done")
+            if enable_progress:
+                print(f"done")
 
             # Update progress after each band
             completed_operations += 1
             
             # Print overall progress every 5 operations or for last operation
-            if completed_operations % 5 == 0 or completed_operations == total_operations:
+            if (completed_operations % 5 == 0 or completed_operations == total_operations) and enable_progress:
                 elapsed_time = time.time() - start_time
                 percent_complete = (completed_operations / total_operations) * 100
                 
@@ -206,6 +232,7 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
         
         # Chunk completion summary
         chunk_elapsed = time.time() - chunk_start_time
-        print(f"      Chunk completed in {chunk_elapsed:.1f}s")
+        if enable_progress:
+            print(f"      Chunk completed in {chunk_elapsed:.1f}s")
 
     return {"result": output}
