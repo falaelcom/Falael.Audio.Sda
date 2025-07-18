@@ -2,11 +2,12 @@
 import numpy as np
 import colorsys
 import spectra
+from .lib.config_jscss import init_config, get_config
 from .image_fingerprint_lib.data_regrouping import get_data_view, query_keys
 from .image_fingerprint_lib.drawing_surface import DrawingSurface
-from .image_fingerprint_lib.config_jscss import init_config, get_config
 from .image_fingerprint_lib.config import CONFIG_RULES
 from .image_fingerprint_lib.metrics import METRICS
+from lib.parallel_collection_process import parallel_collection_process
 
 def get_color(metric_index, normalized_value, bipolar, num_metrics):
     """Generate color for metrics using LCH color space for proper vividness control"""
@@ -590,6 +591,19 @@ def process_permutation(file_path: str, out_path: str, config: dict, previous: d
 
     return result
 
+def _process_single_permutation(perm_index, perm_str, context):
+    """Process a single permutation - wrapper for parallel processing"""
+    # Initialize configuration in worker process (needed for ProcessPoolExecutor)
+    init_config(config_dict=CONFIG_RULES)
+    
+    return process_permutation(
+        context['file_path'], 
+        context['out_path'], 
+        context['config'], 
+        context['previous'], 
+        perm_str
+    )
+
 def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict:
     """Main process function - generates fingerprint images for all permutations"""
     result = {}
@@ -605,18 +619,39 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
     permutations = ["btm", "bmt", "tbm", "tmb", "mbt", "mtb"]
     #permutations = ["btm"]
     
-    # Process each permutation
+    # Get max_workers from config
+    max_workers = config.get("parallel::max_workers", None)
+    
+    # Create context object for parallel processing
+    context = {
+        'file_path': file_path,
+        'out_path': out_path,
+        'config': config,
+        'previous': previous
+    }
+    
+    # Process all permutations in parallel
+    perm_results = parallel_collection_process(
+        permutations, 
+        _process_single_permutation, 
+        context, 
+        max_workers, 
+        use_processes=True
+    )
+    
+    # Transform results back into expected schema
     all_output_paths = []
     permutation_results = {}
     
-    for perm_str in permutations:
-        try:
-            perm_result = process_permutation(file_path, out_path, config, previous, perm_str)
+    for i, perm_result in enumerate(perm_results):
+        perm_str = permutations[i]
+        
+        if 'error' in perm_result:
+            print(f"Error processing permutation {perm_str}: {perm_result['error']}")
+            permutation_results[perm_str] = {'error': perm_result['error'], 'output_paths': []}
+        else:
             all_output_paths.extend(perm_result['output_paths'])
             permutation_results[perm_str] = perm_result
-        except Exception as e:
-            print(f"Error processing permutation {perm_str}: {e}")
-            permutation_results[perm_str] = {'error': str(e), 'output_paths': []}
     
     result['output_paths'] = all_output_paths
     result['fingerprint_dir'] = fingerprint_dir

@@ -7,16 +7,20 @@ import json
 import shutil
 
 # modules
-from x1 import split
+from x1 import split, freq_response_fulltrack, stereo_width_fulltrack
 from x2 import stereo_correlation, stereo_width, stereo_phase, sparkle, harmonics, harmonics_full_spectrum, freq_response, dynamics, dynamics_full_spectrum, quantization, quantization_full_spectrum
 from x3 import dynamic_range, audio_quality
-from x4 import image_fingerprint
+from x4 import image_fingerprint, image_fulltrack
+
 #ALWAYS_RUN = ['stereo_phase']
 #ALWAYS_RUN = ['dynamics', 'dynamics_full_spectrum', 'dynamic_range', 'image_fingerprint']
 #ALWAYS_RUN = ['harmonics', 'harmonics_full_spectrum', 'audio_quality', 'image_fingerprint']
-#ALWAYS_RUN = ['stereo_width', 'image_fingerprint']
+#ALWAYS_RUN = ['stereo_width_fulltrack']
+#ALWAYS_RUN = ['freq_response_fulltrack', 'image_fulltrack']
+#ALWAYS_RUN = ['freq_response_fulltrack', 'stereo_width_fulltrack', 'image_fulltrack']
 ALWAYS_RUN = []
-MODULES = {
+
+MODULES_FINGERPRINT = {
     # x1
     "split": split,
 
@@ -38,16 +42,30 @@ MODULES = {
     "audio_quality": audio_quality,
 
     # x4
-    "image_fingerprint": image_fingerprint,
+    "image_fingerprint": image_fingerprint
+}
+
+MODULES_FULLTRACK = {
+    # x1
+    "freq_response_fulltrack": freq_response_fulltrack,
+    "stereo_width_fulltrack": stereo_width_fulltrack,
+
+    # x4
+    "image_fulltrack": image_fulltrack
 }
 
 # config
 OUT_DIR = "out"
 SRC_DIR = "src"
 CONFIG = {
-    "split::sox_path": r"..\win32\sox-14.4.2-20250323-x64\sox.exe",
+    "parallel::max_workers": 16,  # or None for auto-detect
 
+    "split::sox_path": r"..\win32\sox-14.4.2-20250323-x64\sox.exe",
     "split::duration": "0:30",
+
+    "freq_response_fulltrack::window_samples": 4096,
+    "freq_response_fulltrack::hop_samples": 2048,
+
     "sparkle::frame_ms": 20,
     "sparkle::min_frequency_hz": 1300,
     "stereo_phase::fft_size": 1024,
@@ -95,6 +113,35 @@ def load_existing_results(json_path):
             print(f"Warning: Could not load existing results from {json_path}: {e}")
     return {}
 
+def load_all_fulltrack_results(track_output_root, filename):
+    """
+    Load all existing fulltrack module results and combine into unified object.
+    Returns a dictionary like: {"freq_response_fulltrack": {...}, "stereo_width_fulltrack": {...}}
+    """
+    unified_results = {}
+    
+    # Load results from all known fulltrack modules
+    for module_name in MODULES_FULLTRACK.keys():
+        fulltrack_json_filename = f"fulltrack.{module_name}.{filename}.json"
+        fulltrack_json_path = os.path.join(track_output_root, fulltrack_json_filename)
+        
+        if os.path.exists(fulltrack_json_path):
+            module_result = load_existing_results(fulltrack_json_path)
+            if module_result:
+                unified_results[module_name] = module_result
+    
+    return unified_results
+
+def save_fulltrack_result(track_output_root, module_name, filename, module_result):
+    """
+    Save a single fulltrack module's result to its individual JSON file.
+    """
+    fulltrack_json_filename = f"fulltrack.{module_name}.{filename}.json"
+    fulltrack_json_path = os.path.join(track_output_root, fulltrack_json_filename)
+    
+    with open(fulltrack_json_path, "w", encoding="utf-8") as f:
+        json.dump(module_result, f, indent=2)
+
 def process_file(file_path, out_path):
     filename = os.path.basename(file_path)
     
@@ -111,40 +158,66 @@ def process_file(file_path, out_path):
     if not os.path.exists(copied_file_path):
         shutil.copy2(file_path, copied_file_path)
 
-    # Load existing results from JSON file in track output root
-    json_filename = filename + ".json"
-    json_path = os.path.join(track_output_root, json_filename)
-    result = load_existing_results(json_path)
+    # ============================================
+    # FINGERPRINT MODULES
+    # ============================================
+    
+    # Load existing results from fingerprint JSON file
+    fingerprint_json_filename = f"fingerprint.{filename}.json"
+    fingerprint_json_path = os.path.join(track_output_root, fingerprint_json_filename)
+    fingerprint_result = load_existing_results(fingerprint_json_path)
     
     # If JSON loading failed, don't proceed to avoid overwriting corrupted file
-    if not result and os.path.exists(json_path):
-        print(f"Skipping {filename} due to corrupted JSON file. Please fix or delete {json_path}")
+    if not fingerprint_result and os.path.exists(fingerprint_json_path):
+        print(f"Skipping fingerprint modules for {filename} due to corrupted JSON file. Please fix or delete {fingerprint_json_path}")
         return
 
-    modules_to_run = []
-    for name in MODULES.keys():
-        if name not in result or name in ALWAYS_RUN:
-            modules_to_run.append(name)
+    fingerprint_modules_to_run = []
+    for name in MODULES_FINGERPRINT.keys():
+        if name not in fingerprint_result or name in ALWAYS_RUN:
+            fingerprint_modules_to_run.append(name)
 
-    # Process only missing modules
-    # Pass track_output_root and copied_file_path to each module
-    error_occurred = False
-    for name in modules_to_run:
-       module = MODULES[name]
-       print(f"--- {name}")
-       result[name] = module.process(copied_file_path, track_output_root, CONFIG, result)
+    # Process fingerprint modules
+    for name in fingerprint_modules_to_run:
+        module = MODULES_FINGERPRINT[name]
+        print(f"--- {name}")
+        fingerprint_result[name] = module.process(copied_file_path, track_output_root, CONFIG, fingerprint_result)
 
-       # Check for error
-       error = result[name].get("error")
-       if error:
-           print(f"ERROR: {error}")
-           error_occurred = True
-           break
+    # Save fingerprint results
+    if fingerprint_modules_to_run:
+        with open(fingerprint_json_path, "w", encoding="utf-8") as f:
+            json.dump(fingerprint_result, f, indent=2)
 
-    # Save updated results only if we have valid data and no errors
-    if modules_to_run and not error_occurred:
-       with open(json_path, "w", encoding="utf-8") as f:
-           json.dump(result, f, indent=2)
+    # ============================================
+    # FULLTRACK MODULES
+    # ============================================
+    
+    # Process each fulltrack module with unified previous results
+    for name in MODULES_FULLTRACK.keys():
+        module = MODULES_FULLTRACK[name]
+        
+        # Check if module should be skipped
+        fulltrack_json_filename = f"fulltrack.{name}.{filename}.json"
+        fulltrack_json_path = os.path.join(track_output_root, fulltrack_json_filename)
+        
+        if os.path.exists(fulltrack_json_path) and name not in ALWAYS_RUN:
+            continue
+            
+        print(f"--- {name}")
+        
+        # Load all existing fulltrack results into unified object
+        unified_fulltrack_results = load_all_fulltrack_results(track_output_root, filename)
+        
+        # Combine fingerprint and fulltrack results for the module
+        # Module receives fingerprint results + any existing fulltrack results
+        combined_previous = fingerprint_result.copy()
+        combined_previous.update(unified_fulltrack_results)
+        
+        # Process the module with unified previous results
+        module_result = module.process(copied_file_path, track_output_root, CONFIG, combined_previous)
+        
+        # Save only this module's result to its individual file
+        save_fulltrack_result(track_output_root, name, filename, module_result)
 
 def main():
     input_files = get_input_files()

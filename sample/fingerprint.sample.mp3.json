@@ -2439,54 +2439,28 @@
   },
   "audio_quality": {
     "result": {
-      "80Hz-161Hz": [
+      "648Hz-1299Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.5015,
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.4992,
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
           "quantization_efficiency": 0.5,
-          "overall_spectral_flatness_ratio": 0.233817,
-          "std_overall_spectral_flatness_ratio": 0.165003
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.4997,
-          "overall_spectral_flatness_ratio": 0.262314,
-          "std_overall_spectral_flatness_ratio": 0.13802
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.4986,
           "overall_spectral_flatness_ratio": 0.268586,
           "std_overall_spectral_flatness_ratio": 0.119777
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.499,
-          "overall_spectral_flatness_ratio": 0.237597,
-          "std_overall_spectral_flatness_ratio": 0.267897
-        }
-      ],
-      "5223Hz-10473Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.5006,
-          "overall_spectral_flatness_ratio": 0.233817,
-          "std_overall_spectral_flatness_ratio": 0.165003
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.5006,
-          "overall_spectral_flatness_ratio": 0.262314,
-          "std_overall_spectral_flatness_ratio": 0.13802
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.4986,
-          "overall_spectral_flatness_ratio": 0.268586,
-          "std_overall_spectral_flatness_ratio": 0.119777
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.4995,
+          "quantization_efficiency": 0.5004,
           "overall_spectral_flatness_ratio": 0.237597,
           "std_overall_spectral_flatness_ratio": 0.267897
         }
@@ -2517,54 +2491,28 @@
           "std_overall_spectral_flatness_ratio": 0.267897
         }
       ],
-      "10473Hz-21000Hz": [
+      "161Hz-323Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.5007,
+          "quantization_efficiency": 0.4987,
           "overall_spectral_flatness_ratio": 0.233817,
           "std_overall_spectral_flatness_ratio": 0.165003
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.5006,
+          "quantization_efficiency": 0.5002,
           "overall_spectral_flatness_ratio": 0.262314,
           "std_overall_spectral_flatness_ratio": 0.13802
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.5009,
+          "quantization_efficiency": 0.4988,
           "overall_spectral_flatness_ratio": 0.268586,
           "std_overall_spectral_flatness_ratio": 0.119777
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.4998,
-          "overall_spectral_flatness_ratio": 0.237597,
-          "std_overall_spectral_flatness_ratio": 0.267897
-        }
-      ],
-      "648Hz-1299Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.5015,
-          "overall_spectral_flatness_ratio": 0.233817,
-          "std_overall_spectral_flatness_ratio": 0.165003
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.4992,
-          "overall_spectral_flatness_ratio": 0.262314,
-          "std_overall_spectral_flatness_ratio": 0.13802
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.5,
-          "overall_spectral_flatness_ratio": 0.268586,
-          "std_overall_spectral_flatness_ratio": 0.119777
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.5004,
+          "quantization_efficiency": 0.499,
           "overall_spectral_flatness_ratio": 0.237597,
           "std_overall_spectral_flatness_ratio": 0.267897
         }
@@ -2595,28 +2543,80 @@
           "std_overall_spectral_flatness_ratio": 0.267897
         }
       ],
-      "161Hz-323Hz": [
+      "323Hz-648Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.4987,
+          "quantization_efficiency": 0.4999,
           "overall_spectral_flatness_ratio": 0.233817,
           "std_overall_spectral_flatness_ratio": 0.165003
         },
         {
           "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.5002,
+          "quantization_efficiency": 0.4986,
           "overall_spectral_flatness_ratio": 0.262314,
           "std_overall_spectral_flatness_ratio": 0.13802
         },
         {
           "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.4988,
+          "quantization_efficiency": 0.4995,
           "overall_spectral_flatness_ratio": 0.268586,
           "std_overall_spectral_flatness_ratio": 0.119777
         },
         {
           "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.499,
+          "quantization_efficiency": 0.5007,
+          "overall_spectral_flatness_ratio": 0.237597,
+          "std_overall_spectral_flatness_ratio": 0.267897
+        }
+      ],
+      "5223Hz-10473Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.5006,
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.5006,
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.4986,
+          "overall_spectral_flatness_ratio": 0.268586,
+          "std_overall_spectral_flatness_ratio": 0.119777
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.4995,
+          "overall_spectral_flatness_ratio": 0.237597,
+          "std_overall_spectral_flatness_ratio": 0.267897
+        }
+      ],
+      "10473Hz-21000Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.5007,
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.5006,
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.5009,
+          "overall_spectral_flatness_ratio": 0.268586,
+          "std_overall_spectral_flatness_ratio": 0.119777
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.4998,
           "overall_spectral_flatness_ratio": 0.237597,
           "std_overall_spectral_flatness_ratio": 0.267897
         }
@@ -2647,32 +2647,6 @@
           "std_overall_spectral_flatness_ratio": 0.267897
         }
       ],
-      "323Hz-648Hz": [
-        {
-          "chunk": "media\\sample.mp3.000.mp3",
-          "quantization_efficiency": 0.4999,
-          "overall_spectral_flatness_ratio": 0.233817,
-          "std_overall_spectral_flatness_ratio": 0.165003
-        },
-        {
-          "chunk": "media\\sample.mp3.001.mp3",
-          "quantization_efficiency": 0.4986,
-          "overall_spectral_flatness_ratio": 0.262314,
-          "std_overall_spectral_flatness_ratio": 0.13802
-        },
-        {
-          "chunk": "media\\sample.mp3.002.mp3",
-          "quantization_efficiency": 0.4995,
-          "overall_spectral_flatness_ratio": 0.268586,
-          "std_overall_spectral_flatness_ratio": 0.119777
-        },
-        {
-          "chunk": "media\\sample.mp3.003.mp3",
-          "quantization_efficiency": 0.5007,
-          "overall_spectral_flatness_ratio": 0.237597,
-          "std_overall_spectral_flatness_ratio": 0.267897
-        }
-      ],
       "1299Hz-2605Hz": [
         {
           "chunk": "media\\sample.mp3.000.mp3",
@@ -2695,6 +2669,32 @@
         {
           "chunk": "media\\sample.mp3.003.mp3",
           "quantization_efficiency": 0.4984,
+          "overall_spectral_flatness_ratio": 0.237597,
+          "std_overall_spectral_flatness_ratio": 0.267897
+        }
+      ],
+      "80Hz-161Hz": [
+        {
+          "chunk": "media\\sample.mp3.000.mp3",
+          "quantization_efficiency": 0.5,
+          "overall_spectral_flatness_ratio": 0.233817,
+          "std_overall_spectral_flatness_ratio": 0.165003
+        },
+        {
+          "chunk": "media\\sample.mp3.001.mp3",
+          "quantization_efficiency": 0.4997,
+          "overall_spectral_flatness_ratio": 0.262314,
+          "std_overall_spectral_flatness_ratio": 0.13802
+        },
+        {
+          "chunk": "media\\sample.mp3.002.mp3",
+          "quantization_efficiency": 0.4986,
+          "overall_spectral_flatness_ratio": 0.268586,
+          "std_overall_spectral_flatness_ratio": 0.119777
+        },
+        {
+          "chunk": "media\\sample.mp3.003.mp3",
+          "quantization_efficiency": 0.499,
           "overall_spectral_flatness_ratio": 0.237597,
           "std_overall_spectral_flatness_ratio": 0.267897
         }

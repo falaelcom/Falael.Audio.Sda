@@ -94,8 +94,9 @@ Might want to download it and view with a dedicated MD viewer for better experie
 
 ## Sample Output (src/sample.mp3)
 
-- JSON - https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/sample/sample.mp3.json
-- All Charts - https://github.com/falaelcom/Falael.Audio.Sda/tree/trunk/sample/fingerprint
+- Fingerprint JSON - https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/sample/fingerprint.sample.mp3.json
+- Fingerprint Charts - https://github.com/falaelcom/Falael.Audio.Sda/tree/trunk/sample/fingerprint
+- Fulltrack Charts (under development) - https://github.com/falaelcom/Falael.Audio.Sda/tree/trunk/sample/fingerprint
 
 ![bmt.00.00 - 00.30.sample.mp3.png](https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/sample/fingerprint/bmt.00.00%20-%2000.30.sample.mp3.png)
 ![tbm.zicv.sample.mp3.png](https://github.com/falaelcom/Falael.Audio.Sda/blob/trunk/sample/fingerprint/tbm.zicv.sample.mp3.png)

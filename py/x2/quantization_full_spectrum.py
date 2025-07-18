@@ -1,6 +1,7 @@
 import os
 import numpy as np
 import soundfile as sf
+from lib.chunk_parallel_process import chunk_parallel_process
 
 def estimate_bit_depth(signal, tolerance=1e-6):
     """Estimate effective bit depth by analyzing quantization levels"""
@@ -77,6 +78,61 @@ def detect_quantization_artifacts(signal, frame_size=1024):
     
     return artifacts
 
+def process_single_chunk(chunk_path, chunk, frame_size, bit_depth_tolerance):
+    try:
+        data, rate = sf.read(chunk_path)
+        if data.ndim > 1:
+            # Analyze both channels separately for stereo
+            left = data[:, 0]
+            right = data[:, 1]
+            mono = np.mean(data, axis=1)
+            analyze_channels = [("left", left), ("right", right), ("mono", mono)]
+        else:
+            mono = data
+            analyze_channels = [("mono", mono)]
+
+        chunk_results = {"chunk": chunk}
+        
+        for channel_name, signal in analyze_channels:
+            # Estimate bit depth
+            est_bits, num_levels = estimate_bit_depth(signal, bit_depth_tolerance)
+            
+            # Detect quantization artifacts
+            artifacts = detect_quantization_artifacts(signal, frame_size)
+            
+            if artifacts:
+                avg_spectral_slope = np.mean([a['spectral_slope_db'] for a in artifacts])
+                std_spectral_slope = np.std([a['spectral_slope_db'] for a in artifacts])
+            else:
+                avg_spectral_slope = None
+                std_spectral_slope = None
+            
+            # Store results for this channel
+            channel_results = {
+                f"estimated_bits": round(est_bits, 2) if est_bits is not None else None,
+                f"unique_levels": num_levels,
+                f"avg_spectral_slope_db": round(avg_spectral_slope, 2) if avg_spectral_slope is not None else None,
+                f"std_spectral_slope_db": round(std_spectral_slope, 2) if std_spectral_slope is not None else None,
+            }
+            
+            # Add channel prefix if stereo
+            if len(analyze_channels) > 1:
+                for key, value in channel_results.items():
+                    chunk_results[f"{channel_name}_{key}"] = value
+            else:
+                chunk_results.update(channel_results)
+
+        return chunk_results
+
+    except Exception as e:
+        return {
+            "chunk": chunk,
+            "error": str(e)
+        }
+
+def _chunk_callback(chunk_index, chunk_filename, chunk_path, ctx):
+    return process_single_chunk(chunk_path, chunk_filename, ctx['frame_size'], ctx['bit_depth_tolerance'])
+
 def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict:
     chunk_list = previous.get("split", {}).get("chunks", [])
     if not chunk_list:
@@ -84,60 +140,15 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
 
     frame_size = int(config.get("quantization_full_spectrum::frame_size", 1024))
     bit_depth_tolerance = float(config.get("quantization_full_spectrum::bit_depth_tolerance", 1e-6))
+    max_workers = config.get("parallel::max_workers", None)
     
-    results = []
+    # Create context object for callback
+    context = {
+        'frame_size': frame_size,
+        'bit_depth_tolerance': bit_depth_tolerance
+    }
 
-    for chunk in chunk_list:
-        chunk_path = os.path.join(out_path, chunk)
-        try:
-            data, rate = sf.read(chunk_path)
-            if data.ndim > 1:
-                # Analyze both channels separately for stereo
-                left = data[:, 0]
-                right = data[:, 1]
-                mono = np.mean(data, axis=1)
-                analyze_channels = [("left", left), ("right", right), ("mono", mono)]
-            else:
-                mono = data
-                analyze_channels = [("mono", mono)]
-
-            chunk_results = {"chunk": chunk}
-            
-            for channel_name, signal in analyze_channels:
-                # Estimate bit depth
-                est_bits, num_levels = estimate_bit_depth(signal, bit_depth_tolerance)
-                
-                # Detect quantization artifacts
-                artifacts = detect_quantization_artifacts(signal, frame_size)
-                
-                if artifacts:
-                    avg_spectral_slope = np.mean([a['spectral_slope_db'] for a in artifacts])
-                    std_spectral_slope = np.std([a['spectral_slope_db'] for a in artifacts])
-                else:
-                    avg_spectral_slope = None
-                    std_spectral_slope = None
-                
-                # Store results for this channel
-                channel_results = {
-                    f"estimated_bits": round(est_bits, 2) if est_bits is not None else None,
-                    f"unique_levels": num_levels,
-                    f"avg_spectral_slope_db": round(avg_spectral_slope, 2) if avg_spectral_slope is not None else None,
-                    f"std_spectral_slope_db": round(std_spectral_slope, 2) if std_spectral_slope is not None else None,
-                }
-                
-                # Add channel prefix if stereo
-                if len(analyze_channels) > 1:
-                    for key, value in channel_results.items():
-                        chunk_results[f"{channel_name}_{key}"] = value
-                else:
-                    chunk_results.update(channel_results)
-
-            results.append(chunk_results)
-
-        except Exception as e:
-            results.append({
-                "chunk": chunk,
-                "error": str(e)
-            })
+    # Process all chunks in parallel using processes
+    results = chunk_parallel_process(_chunk_callback, chunk_list, out_path, context, max_workers, use_processes=True)
 
     return {"result": results}

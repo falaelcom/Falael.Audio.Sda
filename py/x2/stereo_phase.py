@@ -1,10 +1,10 @@
 ﻿import os
 import numpy as np
 import soundfile as sf
-import time
 from scipy import signal
 
-from .lib.bandpass_filter import bandpass
+from lib.bandpass_filter import bandpass
+from lib.chunk_parallel_process import chunk_parallel_process
 
 def calculate_phase_coherence(left_band, right_band, fft_size=256, overlap=0.75):
     """Calculate true phase coherence between two signals using STFT"""
@@ -84,6 +84,73 @@ def calculate_phase_coherence(left_band, right_band, fft_size=256, overlap=0.75)
     else:
         return None
 
+def process_single_chunk(chunk_path, chunk, log_edges, bands, fft_size, overlap):
+    try:
+        data, rate = sf.read(chunk_path)
+        if data.ndim != 2 or data.shape[1] != 2:
+            # Add error entries for all frequency ranges
+            result = {}
+            for i in range(bands):
+                f_low = log_edges[i]
+                f_high = log_edges[i + 1]
+                range_key = f"{int(f_low)}Hz-{int(f_high)}Hz"
+                result[range_key] = {
+                    "chunk": chunk,
+                    "coherence": None,
+                    "error": "Not stereo"
+                }
+            return result
+
+        left = data[:, 0]
+        right = data[:, 1]
+        
+    except Exception as e:
+        # Add error entries for all frequency ranges
+        result = {}
+        for i in range(bands):
+            f_low = log_edges[i]
+            f_high = log_edges[i + 1]
+            range_key = f"{int(f_low)}Hz-{int(f_high)}Hz"
+            result[range_key] = {
+                "chunk": chunk,
+                "coherence": None,
+                "error": str(e)
+            }
+        return result
+
+    # Process each frequency band
+    result = {}
+    for i in range(bands):
+        f_low = log_edges[i]
+        f_high = log_edges[i + 1]
+        range_key = f"{int(f_low)}Hz-{int(f_high)}Hz"
+
+        try:
+            # Bandpass filter for this frequency range
+            left_band = bandpass(left, rate, f_low, f_high)
+            right_band = bandpass(right, rate, f_low, f_high)
+
+            # Calculate true phase coherence
+            coherence = calculate_phase_coherence(left_band, right_band, fft_size, overlap)
+
+            result[range_key] = {
+                "chunk": chunk,
+                "coherence": round(float(coherence), 4) if coherence is not None else None
+            }
+
+        except Exception as e:
+            result[range_key] = {
+                "chunk": chunk,
+                "coherence": None,
+                "error": str(e)
+            }
+
+    return result
+
+def _chunk_callback(chunk_index, chunk_filename, chunk_path, ctx):
+    return process_single_chunk(chunk_path, chunk_filename, ctx['log_edges'], ctx['bands'], 
+                               ctx['fft_size'], ctx['overlap'])
+
 def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict:
     chunk_list = previous.get("split", {}).get("chunks", [])
     if not chunk_list:
@@ -94,11 +161,23 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
     bands = int(config.get("multiband::bands", 10))
     fft_size = int(config.get("stereo_phase::fft_size", 256))
     overlap = float(config.get("stereo_phase::overlap", 0.75))
+    max_workers = config.get("parallel::max_workers", None)
 
     # Create logarithmic frequency bands
     log_start = np.log10(low_hz)
     log_end = np.log10(high_hz)
     log_edges = np.logspace(log_start, log_end, num=bands + 1, base=10)
+
+    # Create context object for callback
+    context = {
+        'log_edges': log_edges,
+        'bands': bands,
+        'fft_size': fft_size,
+        'overlap': overlap
+    }
+
+    # Process all chunks in parallel using processes
+    chunk_results = chunk_parallel_process(_chunk_callback, chunk_list, out_path, context, max_workers, use_processes=True)
 
     # Initialize output grouped by frequency ranges
     output = {}
@@ -108,131 +187,10 @@ def process(file_path: str, out_path: str, config: dict, previous: dict) -> dict
         range_key = f"{int(f_low)}Hz-{int(f_high)}Hz"
         output[range_key] = []
 
-    # Progress tracking
-    total_operations = len(chunk_list) * bands
-    completed_operations = 0
-    start_time = time.time()
-    
-    # Enable progress printing for smaller FFT sizes that need more operations
-    enable_progress = fft_size < 1024
-    
-    if enable_progress:
-        print(f"    Processing {len(chunk_list)} chunks across {bands} frequency bands." f" Total operations: {total_operations}")
-
-    for chunk_idx, chunk in enumerate(chunk_list):
-        chunk_path = os.path.join(out_path, chunk)
-        
-        # Chunk-level progress
-        chunk_start_time = time.time()
-        if enable_progress:
-            print(f"    Chunk {chunk_idx + 1}/{len(chunk_list)}: {chunk}")
-        
-        try:
-            data, rate = sf.read(chunk_path)
-            if data.ndim != 2 or data.shape[1] != 2:
-                # Add error entries for all frequency ranges
-                for i in range(bands):
-                    f_low = log_edges[i]
-                    f_high = log_edges[i + 1]
-                    range_key = f"{int(f_low)}Hz-{int(f_high)}Hz"
-                    output[range_key].append({
-                        "chunk": chunk,
-                        "coherence": None,
-                        "error": "Not stereo"
-                    })
-                    completed_operations += 1
-                
-                # Progress update for failed chunk
-                elapsed_time = time.time() - start_time
-                percent_complete = (completed_operations / total_operations) * 100
-                if completed_operations > 0 and enable_progress:
-                    eta_seconds = (elapsed_time / completed_operations) * (total_operations - completed_operations)
-                    eta_minutes = eta_seconds / 60
-                    print(f"      ERROR: Not stereo - Progress: {percent_complete:.1f}% | ETA: {eta_minutes:.1f}m")
-                continue
-
-            left = data[:, 0]
-            right = data[:, 1]
-            
-        except Exception as e:
-            # Add error entries for all frequency ranges
-            for i in range(bands):
-                f_low = log_edges[i]
-                f_high = log_edges[i + 1]
-                range_key = f"{int(f_low)}Hz-{int(f_high)}Hz"
-                output[range_key].append({
-                    "chunk": chunk,
-                    "coherence": None,
-                    "error": str(e)
-                })
-                completed_operations += 1
-                
-            # Progress update for failed chunk
-            elapsed_time = time.time() - start_time
-            percent_complete = (completed_operations / total_operations) * 100
-            if completed_operations > 0 and enable_progress:
-                eta_seconds = (elapsed_time / completed_operations) * (total_operations - completed_operations)
-                eta_minutes = eta_seconds / 60
-                print(f"      ERROR: {str(e)} - Progress: {percent_complete:.1f}% | ETA: {eta_minutes:.1f}m")
-            continue
-
-        # Process each frequency band
-        for i in range(bands):
-            f_low = log_edges[i]
-            f_high = log_edges[i + 1]
-            range_key = f"{int(f_low)}Hz-{int(f_high)}Hz"
-
-            # Show what we're about to process
-            if enable_progress:
-                print(f"      Band {i+1}/{bands}: {range_key}...", end=" ", flush=True)
-            band_start_time = time.time()
-
-            try:
-                # Bandpass filter for this frequency range
-                left_band = bandpass(left, rate, f_low, f_high)
-                right_band = bandpass(right, rate, f_low, f_high)
-
-                # Calculate true phase coherence
-                coherence = calculate_phase_coherence(left_band, right_band, fft_size, overlap)
-
-                output[range_key].append({
-                    "chunk": chunk,
-                    "coherence": round(float(coherence), 4) if coherence is not None else None
-                })
-
-            except Exception as e:
-                output[range_key].append({
-                    "chunk": chunk,
-                    "coherence": None,
-                    "error": str(e)
-                })
-                if enable_progress:
-                    print(f"ERROR: {str(e)}", end=" ", flush=True)
-
-            # Show band completion time
-            band_elapsed = time.time() - band_start_time
-            if enable_progress:
-                print(f"done")
-
-            # Update progress after each band
-            completed_operations += 1
-            
-            # Print overall progress every 5 operations or for last operation
-            if (completed_operations % 5 == 0 or completed_operations == total_operations) and enable_progress:
-                elapsed_time = time.time() - start_time
-                percent_complete = (completed_operations / total_operations) * 100
-                
-                if completed_operations > 0:
-                    eta_seconds = (elapsed_time / completed_operations) * (total_operations - completed_operations)
-                    eta_minutes = eta_seconds / 60
-                    ops_per_sec = completed_operations / elapsed_time
-                    
-                    print(f"        >>> Overall Progress: {percent_complete:.1f}% | "
-                          f"ETA: {eta_minutes:.1f}m | Speed: {ops_per_sec:.1f} ops/sec")
-        
-        # Chunk completion summary
-        chunk_elapsed = time.time() - chunk_start_time
-        if enable_progress:
-            print(f"      Chunk completed in {chunk_elapsed:.1f}s")
+    # Distribute results to output bands
+    for chunk_result in chunk_results:
+        for range_key in output.keys():
+            if range_key in chunk_result:
+                output[range_key].append(chunk_result[range_key])
 
     return {"result": output}

@@ -1,0 +1,25 @@
+{
+  "result": {
+    "output_file": "out\\sample.mp3\\fulltrack\\exp01.correlation.sample.png",
+    "bands_plotted": [
+      "20Hz-40Hz",
+      "40Hz-80Hz",
+      "80Hz-161Hz",
+      "161Hz-323Hz",
+      "323Hz-648Hz",
+      "648Hz-1299Hz",
+      "1299Hz-2605Hz",
+      "2605Hz-5223Hz",
+      "5223Hz-10473Hz",
+      "10473Hz-21000Hz"
+    ],
+    "time_range_seconds": [
+      0,
+      104.74666666666667
+    ],
+    "y_axis_range_db": [
+      -80,
+      80
+    ]
+  }
+}
